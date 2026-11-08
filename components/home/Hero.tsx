@@ -128,33 +128,34 @@ export function Hero() {
         className='absolute inset-0 bg-gradient-to-t from-brand-950/80 via-transparent to-brand-950/40'
       />
 
-      {/* Foto vertical nítida (desktop) */}
+      {/* Foto vertical em painel lateral de ponta a ponta (desktop) */}
       <AnimatePresence initial={false}>
         {slide.layout === 'portrait' && (
           <motion.div
             key={`portrait-${slide.id}`}
-            initial={reducedMotion ? false : { opacity: 0, x: 48, scale: 0.97 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: 24 }}
+            initial={reducedMotion ? false : { opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.9, ease: EASE_OUT_EXPO }}
-            className='pointer-events-none absolute inset-y-0 z-[5] hidden items-center md:flex'
-            style={{ right: 'max(1.5rem, calc((100% - 1200px) / 2))' }}
+            className='pointer-events-none absolute inset-y-0 right-0 z-[5] hidden w-[42vw] md:block'
           >
-            <div className='relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/20'>
-              <Image
-                src={slide.image}
-                alt={slide.imageAlt}
-                width={slide.width ?? 720}
-                height={slide.height ?? 1600}
-                sizes='360px'
-                quality={85}
-                className='h-auto max-h-[70svh] w-[360px] object-cover'
-              />
-              <div
-                aria-hidden='true'
-                className='absolute inset-0 bg-gradient-to-t from-brand-950/35 via-transparent to-transparent'
-              />
-            </div>
+            <Image
+              src={slide.image}
+              alt={slide.imageAlt}
+              fill
+              sizes='42vw'
+              quality={85}
+              className='object-cover'
+              style={{ objectPosition: slide.focus ?? '50% 45%' }}
+            />
+            <div
+              aria-hidden='true'
+              className='absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-950/90 via-brand-950/30 to-transparent'
+            />
+            <div
+              aria-hidden='true'
+              className='absolute inset-0 bg-gradient-to-t from-brand-950/55 via-transparent to-brand-950/35'
+            />
           </motion.div>
         )}
       </AnimatePresence>

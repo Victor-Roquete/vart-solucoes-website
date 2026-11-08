@@ -21,6 +21,10 @@ export interface Service {
   imageAlt: string;
   href: string;
   featured?: boolean;
+  /** Área que agrupa o serviço em /servicos (ex.: Hidráulica). */
+  category: string;
+  /** Fotografias reais adicionais do serviço. */
+  gallery?: string[];
 }
 
 export interface Project {

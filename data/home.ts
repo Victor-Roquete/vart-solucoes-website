@@ -38,7 +38,7 @@ export const differentials: Differential[] = [
     id: 'solucoes-integradas',
     title: 'Soluções integradas',
     description:
-      'Canalização, bombeamento, piscinas e manutenção: um único parceiro para a sua infraestrutura.',
+      'Canalização, bombeamento, piscinas, eletricidade e acabamentos: um único parceiro para a sua obra.',
     icon: 'layers',
   },
   {

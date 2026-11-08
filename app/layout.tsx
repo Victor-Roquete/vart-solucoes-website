@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     'piscinas',
     'manutenção técnica',
     'prestação de serviços Luanda',
+    'eletricidade Luanda',
+    'ladrilho Luanda',
+    'teto falso Luanda',
+    'pintura Luanda',
   ],
   alternates: { canonical: '/' },
   openGraph: {

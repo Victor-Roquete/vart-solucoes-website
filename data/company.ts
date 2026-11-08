@@ -14,10 +14,10 @@ export const company: CompanyInfo = {
   legalName: 'VART Soluções — Prestação de Serviços',
   tagline: 'Prestação de Serviços Técnicos',
   shortDescription:
-    'Instalações hidráulicas, sistemas de bombeamento, piscinas e manutenção técnica executados com precisão, rigor e compromisso com o resultado.',
+    'Canalização, eletrobombas, piscinas, eletricidade e acabamentos — ladrilho, tetos falsos e pintura — executados com precisão, rigor e compromisso com o resultado.',
 
   longDescription: [
-    'A VART Soluções é uma empresa angolana de prestação de serviços técnicos, especializada em instalações hidráulicas, sistemas de bombeamento, piscinas e manutenção de infraestruturas residenciais, comerciais e industriais.',
+    'A VART Soluções é uma empresa angolana de prestação de serviços técnicos. Parte da canalização e dos sistemas hidráulicos — instalações, bombeamento, piscinas e manutenção — e atua também em eletricidade e acabamentos como ladrilho, tetos falsos e pintura, em obras residenciais, comerciais e industriais.',
     'Cada obra é conduzida com critério técnico: diagnóstico cuidadoso, materiais adequados, execução limpa e verificação final — porque a qualidade de uma instalação não se vê no primeiro dia, vê-se ao longo dos anos.',
   ],
 

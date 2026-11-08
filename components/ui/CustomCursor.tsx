@@ -7,6 +7,7 @@ import {
   useReducedMotion,
   useSpring,
 } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 function subscribeFinePointer(callback: () => void) {
   const mql = window.matchMedia('(pointer: fine)');
@@ -24,9 +25,9 @@ function getFinePointerServerSnapshot() {
 
 /**
  * Cursor premium (apenas desktop com ponteiro fino).
- * - Ponto pequeno segue o cursor com mola;
+ * - Ponto com mix-blend-mode: difference → visível em fundos claros e escuros;
  * - Cresce sobre elementos interativos;
- * - Mostra rótulo quando o elemento define [data-cursor-label].
+ * - Rótulo [data-cursor-label] aparece ao lado do ponteiro, sem tapar o conteúdo.
  * Desativado em touch e com prefers-reduced-motion.
  */
 export function CustomCursor() {
@@ -83,19 +84,32 @@ export function CustomCursor() {
 
   if (!enabled) return null;
 
+  const size = label ? 76 : active ? 48 : 12;
+
   return (
     <motion.div
       aria-hidden='true'
-      className='pointer-events-none fixed left-0 top-0 z-[100]'
+      className={cn(
+        'pointer-events-none fixed left-0 top-0 z-[100]',
+        !label && 'mix-blend-difference'
+      )}
       style={{ x: springX, y: springY }}
     >
       <motion.div
-        className='flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-brand-700 bg-brand-800/85 backdrop-blur-sm'
+        className={cn(
+          'flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border',
+          label
+            ? 'border-brand-300/60 bg-brand-500 shadow-lg'
+            : active
+              ? 'border-white bg-white/25'
+              : 'border-white bg-white'
+        )}
         animate={{
-          width: label ? 92 : active ? 56 : 14,
-          height: label ? 92 : active ? 56 : 14,
+          width: size,
+          height: size,
+          x: label ? 52 : 0,
+          y: label ? 52 : 0,
           opacity: visible ? 1 : 0,
-          scale: 1,
         }}
         transition={{ type: 'spring', stiffness: 400, damping: 28 }}
       >

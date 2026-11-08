@@ -28,11 +28,10 @@ export function ProjectCard({
   priority = false,
 }: ProjectCardProps) {
   return (
-    <Reveal className={className}>
+    <Reveal className={`h-full ${className ?? ''}`}>
       <Link
         href='/projetos'
-        data-cursor-label='Ver projeto'
-        className={`group relative block overflow-hidden rounded-xl shadow-card ${aspect}`}
+        className={`group relative block h-full overflow-hidden rounded-xl shadow-card ${aspect}`}
       >
         <Image
           src={project.image}
@@ -96,29 +95,29 @@ export function ProjectsSection() {
           </Reveal>
         </div>
 
-        <div className='mt-14 grid gap-6 lg:grid-cols-12'>
+        <div className='mt-14 grid gap-6 lg:auto-rows-[440px] lg:grid-cols-12'>
           <ProjectCard
             project={first}
             className='lg:col-span-7'
-            aspect='aspect-[16/11]'
+            aspect='aspect-[16/11] lg:aspect-auto'
             sizes='(min-width: 1024px) 58vw, 92vw'
             priority
           />
           <ProjectCard
             project={second}
             className='lg:col-span-5'
-            aspect='aspect-[16/11]'
+            aspect='aspect-[16/11] lg:aspect-auto'
             sizes='(min-width: 1024px) 40vw, 92vw'
           />
           <ProjectCard
             project={third}
             className='lg:col-span-8'
-            aspect='aspect-[16/10]'
+            aspect='aspect-[16/10] lg:aspect-auto'
             sizes='(min-width: 1024px) 64vw, 92vw'
           />
 
           {/* Cartão de conversão */}
-          <Reveal className='lg:col-span-4' delay={0.1}>
+          <Reveal className='h-full lg:col-span-4' delay={0.1}>
             <div className='relative flex h-full min-h-[280px] flex-col justify-between overflow-hidden rounded-xl bg-brand-950 p-8'>
               <div aria-hidden='true' className='absolute inset-0 bg-blueprint' />
               <div

@@ -44,7 +44,7 @@ export function ServicesSection() {
                   onFocus={() => setActive(index)}
                   data-cursor-label='Ver serviço'
                   className={cn(
-                    'group flex items-center justify-between gap-6 py-7 transition-opacity duration-300',
+                    'group flex items-center justify-between gap-6 py-5 transition-opacity duration-300',
                     active === index
                       ? 'opacity-100'
                       : 'opacity-55 hover:opacity-90'
@@ -70,7 +70,7 @@ export function ServicesSection() {
             ))}
           </ul>
 
-          <div className='relative h-[520px] overflow-hidden rounded-xl shadow-card'>
+          <div className='relative h-[520px] self-start overflow-hidden rounded-xl shadow-card lg:sticky lg:top-28'>
             <AnimatePresence mode='popLayout' initial={false}>
               <motion.div
                 key={activeService.id}
