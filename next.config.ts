@@ -14,11 +14,13 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  allowedDevOrigins: ['192.168.139.47'],
   poweredByHeader: false,
   compress: true,
 
   images: {
     formats: ['image/avif', 'image/webp'],
+    qualities: [60, 75, 80, 85],
     deviceSizes: [320, 375, 414, 640, 768, 1024, 1280, 1440, 1920],
     imageSizes: [64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 30,

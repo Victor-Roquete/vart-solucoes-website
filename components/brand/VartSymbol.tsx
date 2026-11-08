@@ -1,49 +1,33 @@
 import { cn } from '@/lib/utils';
 
 /* ============================================================================
-   SÍMBOLO VART — reconstrução vetorial fiel do losango duplo da marca.
-   Vetor oficial aguarda entrega do cliente; esta geometria reproduz o
-   símbolo (losango em contorno + losango interno preenchido com respiro).
-   Usa currentColor: herda a cor do contexto (claro/escuro).
+   SÍMBOLO VART — símbolo oficial (chevron + losango), traçado do logótipo
+   aprovado (icon.svg). Usa currentColor: herda a cor do contexto.
    ========================================================================== */
 
 interface SymbolProps {
   className?: string;
-  /** ID único para o mask (obrigatório quando há mais de um símbolo na página). */
+  /** Mantido por compatibilidade com as chamadas existentes (não é usado). */
   idSuffix?: string;
 }
 
-export function VartSymbol({ className, idSuffix = 'default' }: SymbolProps) {
-  const maskId = `vart-symbol-mask-${idSuffix}`;
-
+export function VartSymbol({ className }: SymbolProps) {
   return (
     <svg
-      viewBox='0 0 100 100'
-      fill='none'
+      viewBox='-3 -3 221 221'
       aria-hidden='true'
+      focusable='false'
       className={cn('h-8 w-8', className)}
     >
-      <mask id={maskId}>
-        <rect width='100' height='100' fill='white' />
-        {/* Recorte que cria o respiro em volta do losango interno */}
-        <polygon
-          points='50,29 81,60 50,91 19,60'
-          fill='black'
-          transform='rotate(0)'
-        />
-      </mask>
-
-      {/* Losango externo em contorno (parte inferior recortada pelo mask) */}
-      <polygon
-        points='50,6 94,50 50,94 6,50'
+      <g
+        fill='currentColor'
         stroke='currentColor'
-        strokeWidth={13}
-        strokeLinejoin='miter'
-        mask={`url(#${maskId})`}
-      />
-
-      {/* Losango interno preenchido */}
-      <polygon points='50,38 72,60 50,82 28,60' fill='currentColor' />
+        strokeWidth='5'
+        strokeLinejoin='round'
+      >
+        <path d='M0 107 L29 135 L108 59 L185 135 L215 108 L109 0 Z' />
+        <path d='M107 94 L48 156 L108 215 L167 154 Z' />
+      </g>
     </svg>
   );
 }

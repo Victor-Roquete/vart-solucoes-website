@@ -36,7 +36,7 @@ export function ImpactSection() {
         className='absolute -inset-y-[12%] inset-x-0'
       >
         <Image
-          src='/assets/services/instalacao-ppr-2.webp'
+          src='/assets/services/canalizacao/patriota-vias-express/instalacao-ppr-2.webp'
           alt='Detalhe de rede hidráulica em PPR executada pela VART Soluções'
           fill
           sizes='100vw'

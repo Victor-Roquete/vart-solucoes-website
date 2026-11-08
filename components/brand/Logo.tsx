@@ -25,7 +25,11 @@ export function Logo({
   const content = (
     <span className='flex items-center gap-3'>
       <VartSymbol
-        className={cn('h-9 w-9 shrink-0 transition-transform duration-500 group-hover:rotate-90 md:h-10 md:w-10', className)}
+        className={cn(
+          'h-9 w-9 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-0.5 md:h-10 md:w-10',
+          tone === 'dark' ? 'text-brand-900' : 'text-white',
+          className
+        )}
         idSuffix={tone}
       />
       <span className='flex flex-col leading-none'>
@@ -41,7 +45,7 @@ export function Logo({
           <span
             className={cn(
               'mt-1 text-[9px] font-semibold uppercase tracking-[0.34em] md:text-[10px]',
-              tone === 'dark' ? 'text-muted' : 'text-white/70'
+              tone === 'dark' ? 'text-brand-900' : 'text-white'
             )}
           >
             Soluções

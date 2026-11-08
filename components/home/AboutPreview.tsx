@@ -23,7 +23,7 @@ export function AboutPreview() {
             />
             <div className='relative aspect-[4/3] overflow-hidden rounded-xl shadow-card'>
               <Image
-                src='/assets/services/manutencao-eletrobomba.webp'
+                src='/assets/services/canalizacao/manutencao-eletrobomba.webp'
                 alt='Técnico da VART Soluções a realizar manutenção de eletrobomba'
                 fill
                 sizes='(min-width: 1024px) 46vw, 92vw'
