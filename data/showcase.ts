@@ -24,7 +24,7 @@ export const showcaseSlides: ShowcaseSlide[] = [
       'Montagem e manutenção de eletrobombas com critério técnico: pressão estável, equipamento protegido e consumo eficiente.',
     image: '/assets/services/canalizacao/obra-onga-montagem-de-eletrobomba.avif',
     imageAlt: 'Eletrobomba montada em obra pela VART Soluções',
-    href: '/servicos#eletrobombas',
+    href: '/servicos#instalacao-de-eletrobomba',
   },
   {
     id: 'slide-piscinas',

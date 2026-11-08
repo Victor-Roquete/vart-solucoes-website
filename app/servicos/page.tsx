@@ -119,6 +119,35 @@ export default function ServicosPage() {
                                 ))}
                               </ul>
                             )}
+                            {service.checks && service.checks.length > 0 && (
+                              <div className='mt-7'>
+                                <h4 className='text-xs font-bold uppercase tracking-[0.2em] text-brand-500'>
+                                  O que verificamos
+                                </h4>
+                                <ul className='mt-3 space-y-2'>
+                                  {service.checks.map((item) => (
+                                    <li
+                                      key={item}
+                                      className='flex items-start gap-2.5 text-sm text-ink/80'
+                                    >
+                                      <span
+                                        aria-hidden='true'
+                                        className='mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-400'
+                                      />
+                                      {item}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                            {service.limits && (
+                              <p className='mt-6 rounded-md border border-line bg-surface p-4 text-sm leading-relaxed text-muted'>
+                                <span className='font-bold text-ink'>
+                                  Limites de atuação:{' '}
+                                </span>
+                                {service.limits}
+                              </p>
+                            )}
                             {service.gallery && service.gallery.length > 0 && (
                               <ul
                                 aria-label={`Fotografias de ${service.title}`}

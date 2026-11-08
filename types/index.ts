@@ -25,6 +25,10 @@ export interface Service {
   category: string;
   /** Fotografias reais adicionais do serviço. */
   gallery?: string[];
+  /** Pontos que verificamos neste serviço (lista «O que verificamos»). */
+  checks?: string[];
+  /** Limites de atuação do serviço, em linguagem simples. */
+  limits?: string;
 }
 
 export interface Project {
