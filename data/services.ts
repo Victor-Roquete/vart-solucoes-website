@@ -214,6 +214,92 @@ export const services: Service[] = [
     href: '/servicos#teto-falso',
     featured: true,
   },
+  {
+    id: 'termo-acumuladores',
+    title: 'Termo-acumuladores',
+    slug: 'termo-acumuladores',
+    category: 'Hidráulica',
+    tagline: 'Instalação, reparação e manutenção.',
+    description:
+      'Instalação, substituição, verificação e manutenção de termo-acumuladores, seguindo as instruções do fabricante e com atenção às ligações hidráulicas e aos dispositivos de segurança.',
+    bullets: [
+      'Instalação e substituição de termo-acumuladores',
+      'Montagem do grupo de segurança hidráulico',
+      'Reparação de fugas e de válvulas',
+      'Manutenção periódica conforme o fabricante',
+    ],
+    checks: [
+      'Modelo, capacidade e condições do local: suporte, espaço e acessibilidade',
+      'Grupo de segurança: válvula de corte, de segurança, vaso de expansão, antirretorno e redutora de pressão',
+      'Descarga da válvula de segurança livre, orientada para baixo e ligada a um escoamento',
+      'Funcionamento da válvula de segurança, pelo manípulo de teste',
+      'Estado do ânodo de proteção, nos modelos que o têm, segundo o fabricante',
+      'Pressão da rede à entrada do equipamento',
+      'Estanqueidade das ligações hidráulicas',
+    ],
+    limits:
+      'Qualquer intervenção é feita com a alimentação elétrica desligada, e a parte elétrica só por profissional habilitado. A descarga da válvula de segurança nunca deve ser obstruída; pingar durante o aquecimento pode ser normal. Em equipamentos abrangidos por garantia seguem-se as condições do fabricante.',
+    image: `${S}/cartoes/termo-acumuladores.svg`,
+    imageAlt: 'Cartão gráfico do serviço Termo-acumuladores (ilustração da marca, não é fotografia de obra)',
+    href: '/servicos#termo-acumuladores',
+    featured: false,
+  },
+  {
+    id: 'montagem-de-filtros',
+    title: 'Montagem e manutenção de filtros',
+    slug: 'montagem-de-filtros',
+    category: 'Hidráulica',
+    tagline: 'Filtros de piscina: montagem, arranque e manutenção.',
+    description:
+      'Montagem de filtros de piscina com bomba, válvula seletora e tubagens, e manutenção do conjunto de filtração, para que a água circule e seja filtrada como o equipamento prevê.',
+    bullets: [
+      'Instalação do filtro sobre base estável e nivelada',
+      'Ligação da bomba, da válvula seletora e do retorno',
+      'Carregamento de areia, quando aplicável',
+      'Arranque e verificação da pressão no manómetro',
+      'Manutenção e substituição de componentes',
+    ],
+    checks: [
+      'Base do filtro estável, sólida e nivelada',
+      'Válvula antirretorno, se o filtro ficar acima do nível da água',
+      'Válvula seletora: filtragem, retrolavagem, enxaguamento, recirculação, esvaziamento e fecho',
+      'Manobras da válvula sempre com a bomba desligada',
+      'Areia colocada antes de ligar as tubagens à válvula',
+      'Pressão inicial com o filtro limpo, registada como referência',
+      'Estanqueidade das ligações e funcionamento da bomba',
+    ],
+    limits:
+      'A pressão máxima de funcionamento e a carga de areia seguem as indicações do fabricante do filtro. As ligações elétricas do equipamento de piscina são feitas por profissional habilitado.',
+    image: `${S}/cartoes/montagem-de-filtros.svg`,
+    imageAlt: 'Cartão gráfico do serviço Montagem e manutenção de filtros (ilustração da marca, não é fotografia de obra)',
+    href: '/servicos#montagem-de-filtros',
+    featured: false,
+  },
+  {
+    id: 'pintura',
+    title: 'Pintura',
+    slug: 'pintura',
+    category: 'Acabamentos',
+    tagline: 'Pintura com acabamento limpo.',
+    description:
+      'Execução de pinturas com acabamento limpo, proteção da área de trabalho e orçamento com âmbito definido antes da obra.',
+    bullets: [
+      'Avaliação no local antes do orçamento',
+      'Proteção da área de trabalho',
+      'Área limpa e entrega no fim',
+    ],
+    checks: [
+      'Estado das superfícies e necessidade de preparação',
+      'Materiais adequados ao tipo de superfície',
+      'Proteção de pavimentos, mobiliário e áreas de circulação',
+    ],
+    limits:
+      'O tipo de tinta, o número de demãos e o prazo dependem da avaliação no local e ficam definidos no orçamento.',
+    image: `${S}/cartoes/pintura.svg`,
+    imageAlt: 'Cartão gráfico do serviço Pintura (ilustração da marca, não é fotografia de obra)',
+    href: '/servicos#pintura',
+    featured: false,
+  },
 ];
 
 /** Serviços em destaque na Home (ordem de apresentação). */
