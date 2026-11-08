@@ -13,3 +13,6 @@ export const CAROUSEL_AUTOPLAY_DELAY = 6000;
 
 export const WHATSAPP_DEFAULT_MESSAGE =
   'Olá VART Soluções! Gostaria de solicitar um orçamento.';
+
+/** Delay do autoplay do hero em ecrã inteiro (ms). */
+export const HERO_AUTOPLAY_DELAY = 7000;

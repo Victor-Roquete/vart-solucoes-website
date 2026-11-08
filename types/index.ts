@@ -74,3 +74,23 @@ export interface CompanyInfo {
   socials: SocialLink[];
   mapEmbedUrl: string;
 }
+
+export interface HeroSlide {
+  id: string;
+  /** Linha curta acima do título do slide (área de serviço). */
+  eyebrow: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  href: string;
+  /** Onde aparece: fotos verticais de baixa resolução ficam só em 'mobile'. */
+  show: 'all' | 'mobile' | 'desktop';
+  /** 'portrait': em desktop mostra a foto vertical nítida sobre fundo desfocado. */
+  layout?: 'cover' | 'portrait';
+  /** Dimensões reais da foto (só layout 'portrait'); por defeito 720x1600. */
+  width?: number;
+  height?: number;
+  /** object-position CSS (ponto focal), ex.: '50% 40%'. */
+  focus?: string;
+}

@@ -14,7 +14,7 @@ export const projects: Project[] = [
     location: 'Obra Onga · Luanda',
     description:
       'Montagem e arranque de eletrobomba para abastecimento de água da obra, com proteção do equipamento e verificação de pressão em toda a rede.',
-    image: '/assets/services/obra-onga-montagem-de-eletrobomba.avif',
+    image: '/assets/services/canalizacao/obra-onga-montagem-de-eletrobomba.avif',
     imageAlt: 'Montagem de eletrobomba na obra Onga, em Luanda',
     featured: true,
   },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     location: 'Residencial · Luanda',
     description:
       'Execução de rede de água fria e quente em PPR para habitação, com fusão controlada, fixação correta e teste de estanqueidade antes do fecho de paredes.',
-    image: '/assets/services/instalacao-ppr-2.webp',
+    image: '/assets/services/canalizacao/patriota-vias-express/instalacao-ppr-2.webp',
     imageAlt: 'Rede de tubagem PPR instalada em habitação pela VART Soluções',
     featured: true,
   },
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     location: 'Luanda',
     description:
       'Teste de pressão em rede nova para comprovar a estanqueidade de todas as ligações antes da entrega da instalação ao cliente.',
-    image: '/assets/services/teste-de-fuga.webp',
+    image: '/assets/services/canalizacao/patriota-vias-express/teste-de-fuga.webp',
     imageAlt: 'Teste de estanqueidade em instalação hidráulica',
   },
 ];

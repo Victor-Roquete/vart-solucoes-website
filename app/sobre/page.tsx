@@ -38,7 +38,7 @@ export default function SobrePage() {
               />
               <div className='relative aspect-[4/3] overflow-hidden rounded-xl shadow-card'>
                 <Image
-                  src='/assets/services/obra-onga-montagem-de-eletrobomba.avif'
+                  src='/assets/services/canalizacao/obra-onga-montagem-de-eletrobomba.avif'
                   alt='Equipa da VART Soluções na montagem de eletrobomba'
                   fill
                   sizes='(min-width: 1024px) 46vw, 92vw'
