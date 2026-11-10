@@ -1,0 +1,28 @@
+{
+  "ui": {
+    "view": "View project"
+  },
+  "items": {
+    "obra-onga-eletrobomba": {
+      "title": "Electric pump installation",
+      "category": "Pumping systems",
+      "location": "Onga site · Luanda",
+      "description": "Assembly and start-up of an electric pump for the site's water supply, with equipment protection and a pressure check throughout the network.",
+      "alt": "Electric pump assembly at the Onga site, in Luanda"
+    },
+    "rede-ppr-residencial": {
+      "title": "PPR hydraulic network",
+      "category": "Plumbing",
+      "location": "Residential · Luanda",
+      "description": "Hot and cold water network in PPR for a dwelling, with controlled fusion, correct fixing and a watertightness test before the walls are closed.",
+      "alt": "PPR piping installed in a dwelling by VART Soluções"
+    },
+    "teste-estanqueidade": {
+      "title": "Watertightness test",
+      "category": "Technical diagnosis",
+      "location": "Luanda",
+      "description": "Pressure test on a new network to prove the watertightness of every connection before the installation is handed over to the client.",
+      "alt": "Watertightness test on a hydraulic installation"
+    }
+  }
+}

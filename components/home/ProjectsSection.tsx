@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { MapPin } from 'lucide-react';
 import type { Project } from '@/types';
 import { projects } from '@/data/projects';
@@ -27,6 +28,7 @@ export function ProjectCard({
   sizes,
   priority = false,
 }: ProjectCardProps) {
+  const t = useTranslations('projects');
   return (
     <Reveal className={`h-full ${className ?? ''}`}>
       <Link
@@ -35,7 +37,7 @@ export function ProjectCard({
       >
         <Image
           src={project.image}
-          alt={project.imageAlt}
+          alt={t(`items.${project.id}.alt`)}
           fill
           priority={priority}
           sizes={sizes}
@@ -48,17 +50,17 @@ export function ProjectCard({
 
         <div className='absolute inset-x-0 bottom-0 p-6 md:p-8'>
           <p className='text-xs font-bold uppercase tracking-[0.24em] text-brand-300'>
-            {project.category}
+            {t(`items.${project.id}.category`)}
           </p>
           <h3 className='mt-2 text-2xl font-extrabold text-white md:text-3xl'>
-            {project.title}
+            {t(`items.${project.id}.title`)}
           </h3>
           <p className='mt-2 flex items-center gap-2 text-sm text-white/65'>
             <MapPin className='h-4 w-4 text-brand-300' aria-hidden='true' />
-            {project.location}
+            {t(`items.${project.id}.location`)}
           </p>
           <span className='mt-4 inline-flex translate-y-2 items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-white opacity-0 transition-all duration-300 ease-out-expo group-hover:translate-y-0 group-hover:opacity-100'>
-            Ver projeto
+            {t('ui.view')}
             <span aria-hidden='true'>→</span>
           </span>
         </div>
@@ -72,6 +74,8 @@ export function ProjectCard({
  * dois projetos grandes em composição assimétrica + um largo + CTA.
  */
 export function ProjectsSection() {
+  const t = useTranslations('home.projects');
+  const tc = useTranslations('common');
   const first = projects[0];
   const second = projects[1];
   const third = projects[2];
@@ -84,13 +88,13 @@ export function ProjectsSection() {
       <Container>
         <div className='flex flex-wrap items-end justify-between gap-6'>
           <SectionHeading
-            eyebrow='Projetos'
-            title='Trabalhos que provam o nosso padrão.'
-            description='Obras e instalações reais — a melhor forma de avaliar uma empresa técnica.'
+            eyebrow={t('eyebrow')}
+            title={t('title')}
+            description={t('description')}
           />
           <Reveal delay={0.1} className='hidden md:block'>
             <Button href='/projetos' variant='secondary'>
-              Todos os projetos
+              {t('all')}
             </Button>
           </Reveal>
         </div>
@@ -126,15 +130,15 @@ export function ProjectsSection() {
               />
               <div className='relative'>
                 <p className='text-xs font-bold uppercase tracking-[0.24em] text-brand-300'>
-                  Próximo projeto
+                  {t('nextEyebrow')}
                 </p>
                 <h3 className='mt-3 text-2xl font-extrabold leading-snug text-white'>
-                  O seu pode ser o próximo trabalho apresentado aqui.
+                  {t('nextTitle')}
                 </h3>
               </div>
               <div className='relative mt-8'>
                 <Button href='/contato#orcamento' variant='light'>
-                  Solicitar orçamento
+                  {tc('nav.quote')}
                 </Button>
               </div>
             </div>

@@ -3,12 +3,13 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher';
 import { mainNav } from '@/data/navigation';
-import { company } from '@/data/company';
 import { VartSymbol } from '@/components/brand/VartSymbol';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
-import { WHATSAPP_DEFAULT_MESSAGE } from '@/lib/constants';
-import { whatsappMessage } from '@/lib/utils';
+import { whatsappLink } from '@/lib/whatsapp';
 
 interface MobileMenuProps {
   open: boolean;
@@ -36,6 +37,7 @@ const itemVariants = {
  * bloqueio de scroll, trap de foco, fecho por ESC/overlay e itens escalonados.
  */
 export function MobileMenu({ open, onClose }: MobileMenuProps) {
+  const t = useTranslations('common');
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -85,12 +87,12 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           className='fixed inset-0 z-[70] lg:hidden'
           role='dialog'
           aria-modal='true'
-          aria-label='Menu de navegação'
+          aria-label={t('aria.menu')}
         >
           {/* Overlay */}
           <motion.button
             type='button'
-            aria-label='Fechar menu'
+            aria-label={t('aria.closeMenu')}
             onClick={onClose}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -118,7 +120,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
               <button
                 type='button'
                 onClick={onClose}
-                aria-label='Fechar menu de navegação'
+                aria-label={t('aria.closeMenu')}
                 className='inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/15 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10'
               >
                 <X className='h-5 w-5' aria-hidden='true' />
@@ -126,7 +128,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             </div>
 
             <motion.nav
-              aria-label='Navegação do menu'
+              aria-label={t('aria.menuNav')}
               variants={listVariants}
               initial='hidden'
               animate='visible'
@@ -135,19 +137,19 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
               <ul className='space-y-2'>
                 {mainNav.map((item, index) => (
                   <motion.li key={item.href} variants={itemVariants}>
-                    <a
+                    <Link
                       href={item.href}
                       className='group flex items-baseline gap-4 py-3 text-2xl font-extrabold uppercase tracking-[0.06em] text-white/80 transition-colors duration-300 hover:text-white'
                     >
                       <span className='text-xs font-bold tracking-[0.2em] text-brand-400'>
                         0{index + 1}
                       </span>
-                      {item.label}
+                      {t(`nav.${item.key}`)}
                       <span
                         aria-hidden='true'
                         className='ml-auto h-px w-0 self-center bg-brand-400 transition-all duration-300 group-hover:w-8'
                       />
-                    </a>
+                    </Link>
                   </motion.li>
                 ))}
               </ul>
@@ -156,14 +158,15 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 variants={itemVariants}
                 className='mt-auto space-y-3 pt-10'
               >
-                <a
+                <LanguageSwitcher variant='inline' className='pb-4' />
+                <Link
                   href='/contato#orcamento'
                   className='flex h-[52px] w-full items-center justify-center rounded-md bg-white text-sm font-bold uppercase tracking-[0.08em] text-brand-900 transition-all duration-300 hover:bg-brand-50'
                 >
-                  Solicitar orçamento
-                </a>
+                  {t('nav.quote')}
+                </Link>
                 <a
-                  href={`${company.whatsapp.waUrl}?text=${whatsappMessage(WHATSAPP_DEFAULT_MESSAGE)}`}
+                  href={whatsappLink(t('whatsapp.defaultMessage'))}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='flex h-[52px] w-full items-center justify-center gap-2.5 rounded-md border border-white/20 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10'

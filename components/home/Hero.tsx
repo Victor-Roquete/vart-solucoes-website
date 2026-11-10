@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { heroSlides } from '@/data/hero';
 import { HERO_AUTOPLAY_DELAY } from '@/lib/constants';
@@ -29,6 +30,8 @@ const pad = (n: number) => String(n).padStart(2, '0');
  * desfocado; em telemóvel, a foto cobre o ecrã.
  */
 export function Hero() {
+  const t = useTranslations('home.hero');
+  const tc = useTranslations('common');
   const reducedMotion = useReducedMotion();
   const isDesktop = useSyncExternalStore(
     subscribeDesktop,
@@ -72,7 +75,7 @@ export function Hero() {
   return (
     <section
       aria-roledescription='carousel'
-      aria-label='Destaques da VART Soluções'
+      aria-label={t('carouselLabel')}
       onFocus={(e) =>
         setFocused((e.target as HTMLElement).matches(':focus-visible'))
       }
@@ -101,7 +104,7 @@ export function Hero() {
             >
               <Image
                 src={s.image}
-                alt={!portrait && isCurrent ? s.imageAlt : ''}
+                alt={!portrait && isCurrent ? t(`slides.${s.id}.alt`) : ''}
                 fill
                 priority={i === 0}
                 sizes='100vw'
@@ -141,7 +144,7 @@ export function Hero() {
           >
             <Image
               src={slide.image}
-              alt={slide.imageAlt}
+              alt={t(`slides.${slide.id}.alt`)}
               fill
               sizes='42vw'
               quality={85}
@@ -170,7 +173,7 @@ export function Hero() {
             className='flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-brand-300'
           >
             <span aria-hidden='true' className='h-px w-10 bg-brand-300/60' />
-            Prestação de serviços técnicos
+            {t('tagline')}
           </motion.p>
 
           <motion.h1
@@ -179,7 +182,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: EASE_OUT_EXPO }}
             className='mt-6 max-w-3xl text-[40px] font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[72px]'
           >
-            Soluções técnicas para a sua obra.
+            {t('headline')}
           </motion.h1>
 
           <AnimatePresence mode='wait' initial={false}>
@@ -192,20 +195,20 @@ export function Hero() {
               className='mt-8 max-w-xl border-l-2 border-brand-400 pl-5'
             >
               <p className='text-xs font-bold uppercase tracking-[0.24em] text-brand-300'>
-                {slide.eyebrow}
+                {t(`slides.${slide.id}.eyebrow`)}
               </p>
               <p className='mt-2 text-2xl font-bold text-white md:text-3xl'>
-                {slide.title}
+                {t(`slides.${slide.id}.title`)}
               </p>
               <p className='mt-2 text-base leading-relaxed text-white/80 md:text-lg'>
-                {slide.description}
+                {t(`slides.${slide.id}.description`)}
               </p>
             </motion.div>
           </AnimatePresence>
 
           <div className='mt-9 flex flex-wrap gap-4'>
             <Button href='/contato#orcamento' variant='light' size='lg'>
-              Solicitar orçamento
+              {tc('nav.quote')}
             </Button>
             <Button
               href={slide.href}
@@ -213,7 +216,7 @@ export function Hero() {
               size='lg'
               className='border-white/25 text-white hover:bg-white/10'
             >
-              Ver serviço
+              {t('viewService')}
             </Button>
           </div>
         </Container>
@@ -235,7 +238,7 @@ export function Hero() {
                   key={s.id}
                   type='button'
                   onClick={() => setIndex(i)}
-                  aria-label={`Ir para o slide ${i + 1}: ${s.title}`}
+                  aria-label={t('goToSlide', { n: i + 1, title: t(`slides.${s.id}.title`) })}
                   aria-current={i === current}
                   className='group relative h-8 flex-1'
                 >

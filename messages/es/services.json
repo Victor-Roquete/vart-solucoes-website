@@ -1,0 +1,64 @@
+{
+  "items": {
+    "canalizacao": {
+      "title": "Fontanería",
+      "tagline": "Redes de agua en PPR, cobre y PVC.",
+      "alt": "Tubería PPR instalada por VART Soluções"
+    },
+    "instalacao-de-eletrobomba": {
+      "title": "Instalación de electrobomba",
+      "tagline": "Montaje, puesta en marcha y prueba del sistema de bombeo.",
+      "alt": "Montaje de electrobomba en una obra de VART Soluções"
+    },
+    "manutencao-preventiva-de-eletrobombas": {
+      "title": "Mantenimiento preventivo de electrobombas",
+      "tagline": "Inspecciones para detectar el desgaste antes de la avería.",
+      "alt": "Mantenimiento de electrobomba realizado por VART Soluções"
+    },
+    "piscinas": {
+      "title": "Piscinas",
+      "tagline": "Circulación, filtrado y tratamiento del agua.",
+      "alt": "Bomba de piscina instalada por VART Soluções"
+    },
+    "deteccao-de-fugas": {
+      "title": "Detección de fugas",
+      "tagline": "Pruebas de estanqueidad y diagnóstico preciso.",
+      "alt": "Prueba de fuga en una instalación hidráulica realizada por VART Soluções"
+    },
+    "manutencao": {
+      "title": "Mantenimiento técnico",
+      "tagline": "Preventivo y correctivo para instalaciones y equipos.",
+      "alt": "Mantenimiento de electrobomba realizado por VART Soluções"
+    },
+    "eletricidade": {
+      "title": "Electricidad",
+      "tagline": "Cableado y conexión de conductores.",
+      "alt": "Cableado de conductores eléctricos en una obra de VART Soluções"
+    },
+    "ladrilho": {
+      "title": "Colocación de baldosas",
+      "tagline": "Colocación de baldosas con acabado cuidado.",
+      "alt": "Colocación de baldosas ejecutada por VART Soluções"
+    },
+    "teto-falso": {
+      "title": "Falsos techos",
+      "tagline": "Ejecución de falsos techos con acabado limpio.",
+      "alt": "Falso techo ejecutado por VART Soluções"
+    },
+    "termo-acumuladores": {
+      "title": "Termoacumuladores",
+      "tagline": "Instalación, reparación y mantenimiento.",
+      "alt": "Tarjeta gráfica del servicio Termoacumuladores (ilustración de la marca, no es una fotografía de obra)"
+    },
+    "montagem-de-filtros": {
+      "title": "Montaje y mantenimiento de filtros",
+      "tagline": "Filtros de piscina: montaje, puesta en marcha y mantenimiento.",
+      "alt": "Tarjeta gráfica del servicio Montaje y mantenimiento de filtros (ilustración de la marca, no es una fotografía de obra)"
+    },
+    "pintura": {
+      "title": "Pintura",
+      "tagline": "Pintura con acabado limpio.",
+      "alt": "Tarjeta gráfica del servicio Pintura (ilustración de la marca, no es una fotografía de obra)"
+    }
+  }
+}

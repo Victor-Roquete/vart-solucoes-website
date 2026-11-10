@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Check } from 'lucide-react';
@@ -5,6 +6,7 @@ import { services } from '@/data/services';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { PageHero } from '@/components/layout/PageHero';
+import { pageHeroes } from '@/data/page-heroes';
 import { Reveal } from '@/components/ui/Reveal';
 import { cn } from '@/lib/utils';
 
@@ -30,12 +32,19 @@ function groupByCategory() {
  * /servicos — atalhos por serviço + lista agrupada por área, com fotografias
  * reais dos trabalhos.
  */
-export default function ServicosPage() {
+export default async function ServicosPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const groups = groupByCategory();
 
   return (
     <>
       <PageHero
+        image={pageHeroes.servicos}
         eyebrow='Serviços'
         title='Soluções técnicas integradas.'
         description='Da instalação à manutenção, cada serviço segue o mesmo método: avaliação, orçamento claro, execução organizada e verificação final.'

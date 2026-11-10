@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "quote": "Solicitar presupuesto",
+    "quoteShort": "Presupuesto"
+  },
+  "aria": {
+    "skipToContent": "Saltar al contenido",
+    "mainNav": "Navegación principal",
+    "openMenu": "Abrir menú de navegación",
+    "menu": "Menú de navegación",
+    "closeMenu": "Cerrar menú de navegación",
+    "menuNav": "Navegación del menú",
+    "whatsapp": "Hablar con VART Soluções por WhatsApp",
+    "homeLink": "VART Soluções — página de inicio"
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "footer": {
+    "tagline": "Fontanería, electrobombas, piscinas, electricidad y acabados — colocación de baldosas, falsos techos y pintura — ejecutados con precisión, rigor y compromiso con el resultado.",
+    "social": "Redes sociales",
+    "servicesAria": "Servicios en el pie de página",
+    "companyAria": "Empresa en el pie de página",
+    "company": "Empresa",
+    "rights": "Todos los derechos reservados."
+  },
+  "hours": {
+    "value": "Lun–Vie · de 08:00 a 18:00"
+  },
+  "whatsapp": {
+    "defaultMessage": "¡Hola, VART Soluções! Me gustaría solicitar un presupuesto.",
+    "tooltip": "Hable con nosotros"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "La página que busca no existe o se ha movido.",
+    "back": "Volver al inicio"
+  },
+  "seo": {
+    "titleSuffix": "Servicios y Soluciones Técnicas en Angola",
+    "description": "Fontanería, electrobombas, piscinas, electricidad y acabados — colocación de baldosas, falsos techos y pintura — ejecutados con precisión, rigor y compromiso con el resultado.",
+    "keywords": [
+      "VART Soluções",
+      "fontanería Luanda",
+      "instalaciones hidráulicas Angola",
+      "electrobombas",
+      "piscinas",
+      "mantenimiento técnico",
+      "servicios Luanda",
+      "electricidad Luanda",
+      "baldosas Luanda",
+      "falso techo Luanda",
+      "pintura Luanda"
+    ]
+  }
+}

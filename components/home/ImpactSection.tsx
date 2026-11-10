@@ -2,6 +2,7 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import {
   motion,
   useReducedMotion,
@@ -18,6 +19,7 @@ const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;
  * Respiro visual entre blocos densos de conteúdo.
  */
 export function ImpactSection() {
+  const t = useTranslations('home.impact');
   const reducedMotion = useReducedMotion();
   const sectionRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
@@ -37,7 +39,7 @@ export function ImpactSection() {
       >
         <Image
           src='/assets/services/canalizacao/patriota-vias-express/instalacao-ppr-2.webp'
-          alt='Detalhe de rede hidráulica em PPR executada pela VART Soluções'
+          alt={t('alt')}
           fill
           sizes='100vw'
           quality={80}
@@ -59,14 +61,14 @@ export function ImpactSection() {
         >
           <p className='flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-brand-300'>
             <span aria-hidden='true' className='h-px w-10 bg-brand-300/60' />
-            Da avaliação à entrega
+            {t('eyebrow')}
           </p>
           <h2 className='mt-5 max-w-2xl text-3xl font-extrabold leading-[1.1] tracking-tight text-white text-balance md:text-5xl'>
-            Execução com critério, do primeiro metro ao último teste.
+            {t('title')}
           </h2>
           <div className='mt-9'>
             <Button href='/projetos' variant='light' size='lg'>
-              Ver projetos
+              {t('cta')}
             </Button>
           </div>
         </motion.div>

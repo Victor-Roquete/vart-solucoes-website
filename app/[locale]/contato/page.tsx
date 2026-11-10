@@ -1,6 +1,8 @@
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { company } from '@/data/company';
 import { PageHero } from '@/components/layout/PageHero';
+import { pageHeroes } from '@/data/page-heroes';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { QuoteForm } from '@/components/forms/QuoteForm';
@@ -33,10 +35,17 @@ const CHANNELS: Channel[] = [
  * /contato — canais diretos + âncora #orcamento (destino dos CTAs da Home).
  * O backend do formulário (POST /api/quote) fica para a fase de conversão.
  */
-export default function ContatoPage() {
+export default async function ContatoPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <PageHero
+        image={pageHeroes.contato}
         eyebrow='Contacto'
         title='Vamos falar sobre o seu projeto.'
         description='Resposta rápida por telefone ou WhatsApp — e orçamento sem compromisso.'

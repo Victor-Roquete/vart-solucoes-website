@@ -1,0 +1,28 @@
+{
+  "ui": {
+    "view": "Voir le projet"
+  },
+  "items": {
+    "obra-onga-eletrobomba": {
+      "title": "Montage d'électropompe",
+      "category": "Systèmes de pompage",
+      "location": "Chantier Onga · Luanda",
+      "description": "Montage et mise en service d'une électropompe pour l'alimentation en eau du chantier, avec protection de l'équipement et vérification de la pression sur tout le réseau.",
+      "alt": "Montage d'une électropompe sur le chantier Onga, à Luanda"
+    },
+    "rede-ppr-residencial": {
+      "title": "Réseau hydraulique en PPR",
+      "category": "Plomberie",
+      "location": "Résidentiel · Luanda",
+      "description": "Réalisation d'un réseau d'eau froide et chaude en PPR pour une habitation, avec fusion contrôlée, fixation correcte et essai d'étanchéité avant la fermeture des murs.",
+      "alt": "Tuyauterie PPR installée dans une habitation par VART Soluções"
+    },
+    "teste-estanqueidade": {
+      "title": "Essai d'étanchéité",
+      "category": "Diagnostic technique",
+      "location": "Luanda",
+      "description": "Essai de pression sur un réseau neuf pour vérifier l'étanchéité de tous les raccords avant la remise de l'installation au client.",
+      "alt": "Essai d'étanchéité sur une installation hydraulique"
+    }
+  }
+}

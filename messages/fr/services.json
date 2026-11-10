@@ -1,0 +1,64 @@
+{
+  "items": {
+    "canalizacao": {
+      "title": "Plomberie",
+      "tagline": "Réseaux d'eau en PPR, cuivre et PVC.",
+      "alt": "Tuyauterie en PPR installée par VART Soluções"
+    },
+    "instalacao-de-eletrobomba": {
+      "title": "Installation d'électropompe",
+      "tagline": "Montage, mise en service et essai du système de pompage.",
+      "alt": "Montage d'une électropompe sur un chantier de VART Soluções"
+    },
+    "manutencao-preventiva-de-eletrobombas": {
+      "title": "Maintenance préventive des électropompes",
+      "tagline": "Inspections pour détecter l'usure avant la panne.",
+      "alt": "Maintenance d'une électropompe réalisée par VART Soluções"
+    },
+    "piscinas": {
+      "title": "Piscines",
+      "tagline": "Circulation, filtration et traitement de l'eau.",
+      "alt": "Pompe de piscine installée par VART Soluções"
+    },
+    "deteccao-de-fugas": {
+      "title": "Détection de fuites",
+      "tagline": "Essais d'étanchéité et diagnostic précis.",
+      "alt": "Essai de fuite sur une installation hydraulique réalisé par VART Soluções"
+    },
+    "manutencao": {
+      "title": "Maintenance technique",
+      "tagline": "Préventive et corrective pour installations et équipements.",
+      "alt": "Maintenance d'une électropompe réalisée par VART Soluções"
+    },
+    "eletricidade": {
+      "title": "Électricité",
+      "tagline": "Câblage et raccordement des conducteurs.",
+      "alt": "Câblage de conducteurs électriques sur un chantier de VART Soluções"
+    },
+    "ladrilho": {
+      "title": "Pose de carrelage",
+      "tagline": "Pose de carrelage avec une finition soignée.",
+      "alt": "Pose de carrelage réalisée par VART Soluções"
+    },
+    "teto-falso": {
+      "title": "Faux plafonds",
+      "tagline": "Réalisation de faux plafonds avec une finition propre.",
+      "alt": "Faux plafond réalisé par VART Soluções"
+    },
+    "termo-acumuladores": {
+      "title": "Ballons d'eau chaude",
+      "tagline": "Installation, réparation et maintenance.",
+      "alt": "Carte graphique du service Ballons d'eau chaude (illustration de la marque, pas une photographie de chantier)"
+    },
+    "montagem-de-filtros": {
+      "title": "Montage et maintenance de filtres",
+      "tagline": "Filtres de piscine : montage, mise en service et maintenance.",
+      "alt": "Carte graphique du service Montage et maintenance de filtres (illustration de la marque, pas une photographie de chantier)"
+    },
+    "pintura": {
+      "title": "Peinture",
+      "tagline": "Peinture avec une finition propre.",
+      "alt": "Carte graphique du service Peinture (illustration de la marque, pas une photographie de chantier)"
+    }
+  }
+}

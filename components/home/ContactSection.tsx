@@ -1,26 +1,29 @@
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { company } from '@/data/company';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
-import { WHATSAPP_DEFAULT_MESSAGE } from '@/lib/constants';
-import { whatsappMessage } from '@/lib/utils';
+import { whatsappLink } from '@/lib/whatsapp';
 
 /**
  * Contacto — canais diretos + mapa. Sem sobrecarregar: o formulário
  * completo de orçamento vive em /contato#orcamento.
  */
 export function ContactSection() {
+  const t = useTranslations('home.contact');
+  const tc = useTranslations('company');
+  const tg = useTranslations('common');
   return (
     <section className='py-20 md:py-28'>
       <Container>
         <div className='grid gap-14 lg:grid-cols-2 lg:gap-20'>
           <div>
             <SectionHeading
-              eyebrow='Contacto'
-              title='Fale com a VART Soluções.'
-              description='Estamos prontos para avaliar o seu projeto e responder com rapidez.'
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
 
             <Reveal delay={0.15}>
@@ -35,7 +38,7 @@ export function ContactSection() {
                     </span>
                     <span>
                       <span className='block text-xs font-bold uppercase tracking-[0.18em] text-muted'>
-                        {company.phone.label}
+                        {tc('labels.phone')}
                       </span>
                       <span className='block font-bold text-ink transition-colors group-hover:text-brand-700'>
                         {company.phone.value}
@@ -45,7 +48,7 @@ export function ContactSection() {
                 </li>
                 <li>
                   <a
-                    href={`${company.whatsapp.waUrl}?text=${whatsappMessage(WHATSAPP_DEFAULT_MESSAGE)}`}
+                    href={whatsappLink(tg('whatsapp.defaultMessage'))}
                     target='_blank'
                     rel='noopener noreferrer'
                     className='group flex items-center gap-4'
@@ -55,7 +58,7 @@ export function ContactSection() {
                     </span>
                     <span>
                       <span className='block text-xs font-bold uppercase tracking-[0.18em] text-muted'>
-                        {company.whatsapp.label}
+                        {tc('labels.whatsapp')}
                       </span>
                       <span className='block font-bold text-ink transition-colors group-hover:text-brand-700'>
                         {company.whatsapp.value}
@@ -73,7 +76,7 @@ export function ContactSection() {
                     </span>
                     <span>
                       <span className='block text-xs font-bold uppercase tracking-[0.18em] text-muted'>
-                        {company.email.label}
+                        {tc('labels.email')}
                       </span>
                       <span className='block font-bold text-ink transition-colors group-hover:text-brand-700'>
                         {company.email.value}
@@ -87,10 +90,10 @@ export function ContactSection() {
                   </span>
                   <span>
                     <span className='block text-xs font-bold uppercase tracking-[0.18em] text-muted'>
-                      {company.hours.label}
+                      {tc('labels.hours')}
                     </span>
                     <span className='block font-bold text-ink'>
-                      {company.hours.value}
+                      {tg('hours.value')}
                     </span>
                   </span>
                 </li>
@@ -100,7 +103,7 @@ export function ContactSection() {
                   </span>
                   <span>
                     <span className='block text-xs font-bold uppercase tracking-[0.18em] text-muted'>
-                      {company.address.label}
+                      {tc('labels.address')}
                     </span>
                     <span className='block font-bold text-ink'>
                       {company.address.value}
@@ -115,7 +118,7 @@ export function ContactSection() {
             <div className='h-full min-h-[320px] overflow-hidden rounded-xl border border-line shadow-card lg:min-h-[440px]'>
               <iframe
                 src={company.mapEmbedUrl}
-                title='Mapa — VART Soluções, Luanda, Angola'
+                title={t('mapTitle')}
                 loading='lazy'
                 referrerPolicy='no-referrer-when-downgrade'
                 className='h-full min-h-[320px] w-full border-0 lg:min-h-[440px]'

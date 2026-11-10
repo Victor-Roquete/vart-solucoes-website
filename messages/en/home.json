@@ -1,0 +1,159 @@
+{
+  "hero": {
+    "carouselLabel": "VART Soluções highlights",
+    "tagline": "Technical services",
+    "headline": "Technical solutions for your project.",
+    "viewService": "View service",
+    "goToSlide": "Go to slide {n}: {title}",
+    "slides": {
+      "ppr-exterior": {
+        "eyebrow": "Plumbing",
+        "title": "PPR water networks",
+        "description": "Installation and renewal of hydraulic networks, with verified connections and testing before handover.",
+        "alt": "PPR piping installed by VART Soluções"
+      },
+      "termofusao": {
+        "eyebrow": "Plumbing",
+        "title": "PPR joints by heat fusion",
+        "description": "Welding of pipes on site, with connections made and checked before handover.",
+        "alt": "Technician welding PPR pipe on a VART Soluções site"
+      },
+      "eletricidade": {
+        "eyebrow": "Electrical work",
+        "title": "Wiring and conductors",
+        "description": "Pulling and connecting conductors in an organised way, with a final check.",
+        "alt": "Electrical conductors being pulled on a VART Soluções site"
+      },
+      "ladrilho": {
+        "eyebrow": "Tiling",
+        "title": "Tile laying",
+        "description": "Floors and walls tiled with careful finishing.",
+        "alt": "Tile laying carried out by VART Soluções"
+      },
+      "montagem-rede": {
+        "eyebrow": "Plumbing",
+        "title": "Water network assembly",
+        "description": "Layout and assembly of PPR piping, with organised and tested connections.",
+        "alt": "PPR piping assembly on a VART Soluções site"
+      },
+      "esgoto-pvc": {
+        "eyebrow": "Plumbing",
+        "title": "PVC sewer networks",
+        "description": "Execution of branches and drainage connections in PVC.",
+        "alt": "PVC sewer pipework installed by VART Soluções"
+      },
+      "teto-falso": {
+        "eyebrow": "Finishing",
+        "title": "False ceilings",
+        "description": "False ceilings built with a clean finish.",
+        "alt": "False ceiling built by VART Soluções"
+      },
+      "ppr-distribuicao": {
+        "eyebrow": "Plumbing",
+        "title": "Water distribution",
+        "description": "Connections and distribution carried out in an organised way, with a final check.",
+        "alt": "Water distribution in PPR installed by VART Soluções"
+      }
+    }
+  },
+  "trust": {
+    "label": "VART Soluções service commitments",
+    "items": {
+      "quality": "Quality",
+      "professionalism": "Professionalism",
+      "commitment": "Commitment",
+      "integrated": "Integrated solutions",
+      "clean": "Clean workmanship",
+      "fast": "Quick response"
+    }
+  },
+  "about": {
+    "eyebrow": "About VART",
+    "title": "Technical rigour in every installation.",
+    "caption": "Technical maintenance · VART Soluções",
+    "alt": "Electric pump maintenance carried out by VART Soluções",
+    "cta": "Get to know the company"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Technical solutions for every need of your infrastructure.",
+    "description": "Hover over each area to see real work carried out by VART.",
+    "view": "View service"
+  },
+  "differentials": {
+    "eyebrow": "Why VART",
+    "title": "A technical partner you can trust.",
+    "description": "Every service is carried out with the same discipline, whatever the size of the job.",
+    "items": {
+      "qualidade": {
+        "title": "Quality",
+        "description": "Suitable materials, careful execution and a final check on every service delivered."
+      },
+      "profissionalismo": {
+        "title": "Professionalism",
+        "description": "Clear communication and organised work — from first contact to handover."
+      },
+      "solucoes-integradas": {
+        "title": "Integrated solutions",
+        "description": "Plumbing, pumping, swimming pools, electrical work and finishing: a single partner for your project."
+      },
+      "compromisso": {
+        "title": "Commitment",
+        "description": "Deadlines and prices agreed in the quote. VART's name stands behind every job."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Work that proves our standard.",
+    "description": "Real jobs and installations — the best way to judge a technical company.",
+    "all": "All projects",
+    "nextEyebrow": "Next project",
+    "nextTitle": "Yours could be the next project featured here."
+  },
+  "impact": {
+    "eyebrow": "From assessment to handover",
+    "title": "Careful execution, from the first metre to the last test.",
+    "cta": "View projects",
+    "alt": "Detail of a PPR water network installed by VART Soluções"
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "A clear process, from first contact to handover.",
+    "description": "No improvised steps: you always know where the work stands.",
+    "steps": {
+      "entendimento": {
+        "title": "Understanding",
+        "description": "We listen to your needs and gather the details of the space and the problem."
+      },
+      "avaliacao": {
+        "title": "Assessment",
+        "description": "We assess the installation on site and identify the right technical solution."
+      },
+      "orcamento": {
+        "title": "Quote",
+        "description": "We present a clear proposal, with materials, deadlines and prices defined."
+      },
+      "execucao": {
+        "title": "Execution",
+        "description": "We work with rigour, cleanliness and constant communication throughout."
+      },
+      "entrega": {
+        "title": "Handover",
+        "description": "We test everything and hand over a clean area."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Let's talk",
+    "title": "Need a solution for your project or installation?",
+    "text": "Talk to VART Soluções. We reply with a clear diagnosis and a no-obligation quote.",
+    "whatsapp": "WhatsApp"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Talk to VART Soluções.",
+    "description": "We are ready to assess your project and reply quickly.",
+    "mapTitle": "Map — VART Soluções, Luanda, Angola"
+  }
+}

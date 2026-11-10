@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import { company } from '@/data/company';
 import { services } from '@/data/services';
@@ -6,10 +7,11 @@ import { footerNav } from '@/data/navigation';
 import { Container } from '@/components/ui/Container';
 import { Logo } from '@/components/brand/Logo';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
-import { WHATSAPP_DEFAULT_MESSAGE } from '@/lib/constants';
-import { whatsappMessage } from '@/lib/utils';
+import { whatsappLink } from '@/lib/whatsapp';
 
 export function Footer() {
+  const t = useTranslations('common');
+  const ts = useTranslations('services');
   const year = new Date().getFullYear();
 
   return (
@@ -20,9 +22,9 @@ export function Footer() {
           <div>
             <Logo tone='light' href='/' />
             <p className='mt-6 max-w-sm text-sm leading-relaxed text-white/55'>
-              {company.shortDescription}
+              {t('footer.tagline')}
             </p>
-            <ul className='mt-7 flex items-center gap-3' aria-label='Redes sociais'>
+            <ul className='mt-7 flex items-center gap-3' aria-label={t('footer.social')}>
               {company.socials.map((social) => (
                 <li key={social.label}>
                   <a
@@ -47,9 +49,9 @@ export function Footer() {
           </div>
 
           {/* Serviços */}
-          <nav aria-label='Serviços no rodapé'>
+          <nav aria-label={t('footer.servicesAria')}>
             <h3 className='text-xs font-bold uppercase tracking-[0.26em] text-white'>
-              Serviços
+              {t('nav.services')}
             </h3>
             <ul className='mt-6 space-y-3'>
               {services.map((service) => (
@@ -58,7 +60,7 @@ export function Footer() {
                     href={service.href}
                     className='text-sm text-white/55 transition-colors duration-300 hover:text-brand-300'
                   >
-                    {service.title}
+                    {ts(`items.${service.id}.title`)}
                   </Link>
                 </li>
               ))}
@@ -66,30 +68,28 @@ export function Footer() {
           </nav>
 
           {/* Empresa */}
-          {footerNav.map((group) => (
-            <nav key={group.title} aria-label={`${group.title} no rodapé`}>
-              <h3 className='text-xs font-bold uppercase tracking-[0.26em] text-white'>
-                {group.title}
-              </h3>
-              <ul className='mt-6 space-y-3'>
-                {group.items.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className='text-sm text-white/55 transition-colors duration-300 hover:text-brand-300'
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
+          <nav aria-label={t('footer.companyAria')}>
+            <h3 className='text-xs font-bold uppercase tracking-[0.26em] text-white'>
+              {t('footer.company')}
+            </h3>
+            <ul className='mt-6 space-y-3'>
+              {footerNav.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className='text-sm text-white/55 transition-colors duration-300 hover:text-brand-300'
+                  >
+                    {t(`nav.${item.key}`)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           {/* Contacto */}
           <div>
             <h3 className='text-xs font-bold uppercase tracking-[0.26em] text-white'>
-              Contacto
+              {t('nav.contact')}
             </h3>
             <ul className='mt-6 space-y-4 text-sm'>
               <li>
@@ -103,7 +103,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={`${company.whatsapp.waUrl}?text=${whatsappMessage(WHATSAPP_DEFAULT_MESSAGE)}`}
+                  href={whatsappLink(t('whatsapp.defaultMessage'))}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='flex items-center gap-3 text-white/55 transition-colors hover:text-white'
@@ -127,7 +127,7 @@ export function Footer() {
               </li>
               <li className='flex items-center gap-3 text-white/55'>
                 <Clock className='h-4 w-4 shrink-0 text-brand-400' aria-hidden='true' />
-                {company.hours.value}
+                {t('hours.value')}
               </li>
             </ul>
           </div>
@@ -137,7 +137,7 @@ export function Footer() {
       <div className='border-t border-white/10'>
         <Container className='flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/40 md:flex-row'>
           <p>
-            © {year} {company.legalName}. Todos os direitos reservados.
+            © {year} {company.legalName}. {t('footer.rights')}
           </p>
           <p>Luanda · Angola</p>
         </Container>

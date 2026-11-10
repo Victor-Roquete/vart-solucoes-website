@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { featuredServices } from '@/data/services';
@@ -18,6 +19,8 @@ const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;
  * grande troca com crossfade; no mobile, cards empilhados com foto.
  */
 export function ServicesSection() {
+  const t = useTranslations('home.services');
+  const ts = useTranslations('services');
   const [active, setActive] = useState(0);
   const activeService = featuredServices[active];
 
@@ -28,9 +31,9 @@ export function ServicesSection() {
     <section className='bg-surface py-20 md:py-28'>
       <Container>
         <SectionHeading
-          eyebrow='Serviços'
-          title='Soluções técnicas para cada necessidade da sua infraestrutura.'
-          description='Passe o cursor sobre cada área para ver um trabalho real executado pela VART.'
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          description={t('description')}
         />
 
         {/* Desktop — lista interativa + imagem grande */}
@@ -42,7 +45,7 @@ export function ServicesSection() {
                   href={service.href}
                   onMouseEnter={() => setActive(index)}
                   onFocus={() => setActive(index)}
-                  data-cursor-label='Ver serviço'
+                  data-cursor-label={t('view')}
                   className={cn(
                     'group flex items-center justify-between gap-6 py-5 transition-opacity duration-300',
                     active === index
@@ -55,10 +58,10 @@ export function ServicesSection() {
                       0{index + 1}
                     </p>
                     <h3 className='mt-2 text-2xl font-extrabold tracking-tight text-ink transition-transform duration-300 ease-out-expo group-hover:translate-x-1.5'>
-                      {service.title}
+                      {ts(`items.${service.id}.title`)}
                     </h3>
                     <p className='mt-1.5 text-sm text-muted'>
-                      {service.tagline}
+                      {ts(`items.${service.id}.tagline`)}
                     </p>
                   </div>
                   <ArrowUpRight
@@ -82,7 +85,7 @@ export function ServicesSection() {
               >
                 <Image
                   src={activeService.image}
-                  alt={activeService.imageAlt}
+                  alt={ts(`items.${activeService.id}.alt`)}
                   fill
                   sizes='460px'
                   className='object-cover'
@@ -103,9 +106,9 @@ export function ServicesSection() {
                 className='absolute bottom-5 left-5 right-5'
               >
                 <p className='text-lg font-extrabold text-white'>
-                  {activeService.title}
+                  {ts(`items.${activeService.id}.title`)}
                 </p>
-                <p className='text-sm text-white/70'>{activeService.tagline}</p>
+                <p className='text-sm text-white/70'>{ts(`items.${activeService.id}.tagline`)}</p>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -122,7 +125,7 @@ export function ServicesSection() {
                 <div className='relative aspect-[16/10] overflow-hidden'>
                   <Image
                     src={service.image}
-                    alt={service.imageAlt}
+                    alt={ts(`items.${service.id}.alt`)}
                     fill
                     sizes='(min-width: 640px) 45vw, 92vw'
                     className='object-cover transition-transform duration-500 ease-out-expo group-hover:scale-[1.04]'
@@ -133,13 +136,13 @@ export function ServicesSection() {
                     0{index + 1}
                   </p>
                   <h3 className='mt-2 text-lg font-extrabold text-ink'>
-                    {service.title}
+                    {ts(`items.${service.id}.title`)}
                   </h3>
                   <p className='mt-1.5 text-sm leading-relaxed text-muted'>
-                    {service.tagline}
+                    {ts(`items.${service.id}.tagline`)}
                   </p>
                   <span className='mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-brand-700'>
-                    Ver serviço
+                    {t('view')}
                     <ArrowUpRight
                       className='h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5'
                       aria-hidden='true'

@@ -17,7 +17,7 @@ export const company: CompanyInfo = {
     'Canalização, eletrobombas, piscinas, eletricidade e acabamentos — ladrilho, tetos falsos e pintura — executados com precisão, rigor e compromisso com o resultado.',
 
   longDescription: [
-    'A VART Soluções é uma empresa angolana de prestação de serviços técnicos. Parte da canalização e dos sistemas hidráulicos — instalações, bombeamento, piscinas e manutenção — e atua também em eletricidade e acabamentos como ladrilho, tetos falsos e pintura, em obras residenciais, comerciais e industriais.',
+    'A VART Soluções é uma empresa angolana de prestação de serviços técnicos. Parte da canalização e dos sistemas hidráulicos — instalações, bombeamento, piscinas e manutenção — e atua também em eletricidade e acabamentos como ladrilho, tetos falsos e pintura, em obras e instalações.',
     'Cada obra é conduzida com critério técnico: diagnóstico cuidadoso, materiais adequados, execução limpa e verificação final — porque a qualidade de uma instalação não se vê no primeiro dia, vê-se ao longo dos anos.',
   ],
 
@@ -47,7 +47,7 @@ export const company: CompanyInfo = {
 
   hours: {
     label: 'Horário',
-    value: 'Seg–Sáb · 08h00 às 18h00',
+    value: 'Seg–Sex · 08h00 às 18h00',
   },
 
   serviceAreas: ['Luanda', 'Províncias vizinhas — sob consulta'],

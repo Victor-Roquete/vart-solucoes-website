@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "quote": "Demander un devis",
+    "quoteShort": "Devis"
+  },
+  "aria": {
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu de navigation",
+    "menu": "Menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "menuNav": "Navigation du menu",
+    "whatsapp": "Écrire à VART Soluções sur WhatsApp",
+    "homeLink": "VART Soluções — page d'accueil"
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "footer": {
+    "tagline": "Plomberie, électropompes, piscines, électricité et finitions — carrelage, faux plafonds et peinture — réalisés avec précision, rigueur et engagement envers le résultat.",
+    "social": "Réseaux sociaux",
+    "servicesAria": "Services dans le pied de page",
+    "companyAria": "Entreprise dans le pied de page",
+    "company": "Entreprise",
+    "rights": "Tous droits réservés."
+  },
+  "hours": {
+    "value": "Lun–Ven · 8 h à 18 h"
+  },
+  "whatsapp": {
+    "defaultMessage": "Bonjour VART Soluções ! Je souhaiterais demander un devis.",
+    "tooltip": "Parlez-nous"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  },
+  "seo": {
+    "titleSuffix": "Services et solutions techniques en Angola",
+    "description": "Plomberie, électropompes, piscines, électricité et finitions — carrelage, faux plafonds et peinture — réalisés avec précision, rigueur et engagement envers le résultat.",
+    "keywords": [
+      "VART Soluções",
+      "plomberie Luanda",
+      "installations hydrauliques Angola",
+      "électropompes",
+      "piscines",
+      "maintenance technique",
+      "services Luanda",
+      "électricité Luanda",
+      "carrelage Luanda",
+      "faux plafond Luanda",
+      "peinture Luanda"
+    ]
+  }
+}

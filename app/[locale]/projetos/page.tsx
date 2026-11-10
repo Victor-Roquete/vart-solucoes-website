@@ -1,6 +1,8 @@
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { projects } from '@/data/projects';
 import { PageHero } from '@/components/layout/PageHero';
+import { pageHeroes } from '@/data/page-heroes';
 import { ProjectCard } from '@/components/home/ProjectsSection';
 import { Container } from '@/components/ui/Container';
 
@@ -14,12 +16,19 @@ export const metadata: Metadata = {
 /**
  * /projetos — galeria editorial dos trabalhos executados.
  */
-export default function ProjetosPage() {
+export default async function ProjetosPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <PageHero
+        image={pageHeroes.projetos}
         eyebrow='Projetos'
-        title='Trabalhos executados com comprovação.'
+        title='Obras reais, documentadas em fotografia.'
         description='Uma seleção de obras e instalações da VART Soluções. Qualidade acima de quantidade.'
       />
 

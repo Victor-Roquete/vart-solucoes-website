@@ -1,0 +1,28 @@
+{
+  "ui": {
+    "view": "Ver proyecto"
+  },
+  "items": {
+    "obra-onga-eletrobomba": {
+      "title": "Montaje de electrobomba",
+      "category": "Sistemas de bombeo",
+      "location": "Obra Onga · Luanda",
+      "description": "Montaje y puesta en marcha de una electrobomba para el abastecimiento de agua de la obra, con protección del equipo y comprobación de la presión en toda la red.",
+      "alt": "Montaje de electrobomba en la obra Onga, en Luanda"
+    },
+    "rede-ppr-residencial": {
+      "title": "Red hidráulica en PPR",
+      "category": "Fontanería",
+      "location": "Residencial · Luanda",
+      "description": "Ejecución de red de agua fría y caliente en PPR para una vivienda, con fusión controlada, fijación correcta y prueba de estanqueidad antes de cerrar las paredes.",
+      "alt": "Tubería PPR instalada en una vivienda por VART Soluções"
+    },
+    "teste-estanqueidade": {
+      "title": "Prueba de estanqueidad",
+      "category": "Diagnóstico técnico",
+      "location": "Luanda",
+      "description": "Prueba de presión en una red nueva para comprobar la estanqueidad de todas las conexiones antes de entregar la instalación al cliente.",
+      "alt": "Prueba de estanqueidad en una instalación hidráulica"
+    }
+  }
+}

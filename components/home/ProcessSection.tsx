@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import { processSteps } from '@/data/home';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
@@ -8,13 +9,14 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
  * ligação) e vertical no mobile.
  */
 export function ProcessSection() {
+  const t = useTranslations('home.process');
   return (
     <section className='bg-surface py-20 md:py-28'>
       <Container>
         <SectionHeading
-          eyebrow='Como trabalhamos'
-          title='Um processo claro, do contacto à entrega.'
-          description='Nenhuma etapa improvisada: sabe sempre em que ponto do trabalho estamos.'
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <ol className='relative mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6'>
@@ -31,10 +33,10 @@ export function ProcessSection() {
                   0{index + 1}
                 </span>
                 <h3 className='mt-5 text-lg font-extrabold text-ink'>
-                  {step.title}
+                  {t(`steps.${step.id}.title`)}
                 </h3>
                 <p className='mt-2 text-sm leading-relaxed text-muted'>
-                  {step.description}
+                  {t(`steps.${step.id}.description`)}
                 </p>
               </Reveal>
             </li>

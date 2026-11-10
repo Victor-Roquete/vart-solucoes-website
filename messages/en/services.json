@@ -1,0 +1,64 @@
+{
+  "items": {
+    "canalizacao": {
+      "title": "Plumbing",
+      "tagline": "Water networks in PPR, copper and PVC.",
+      "alt": "PPR piping installed by VART Soluções"
+    },
+    "instalacao-de-eletrobomba": {
+      "title": "Electric pump installation",
+      "tagline": "Assembly, start-up and testing of the pumping system.",
+      "alt": "Electric pump assembly on a VART Soluções job"
+    },
+    "manutencao-preventiva-de-eletrobombas": {
+      "title": "Preventive maintenance of electric pumps",
+      "tagline": "Inspections to spot wear before a breakdown.",
+      "alt": "Electric pump maintenance carried out by VART Soluções"
+    },
+    "piscinas": {
+      "title": "Swimming pools",
+      "tagline": "Circulation, filtration and water treatment.",
+      "alt": "Pool pump installed by VART Soluções"
+    },
+    "deteccao-de-fugas": {
+      "title": "Leak detection",
+      "tagline": "Watertightness tests and precise diagnosis.",
+      "alt": "Leak test on a hydraulic installation carried out by VART Soluções"
+    },
+    "manutencao": {
+      "title": "Technical maintenance",
+      "tagline": "Preventive and corrective work for installations and equipment.",
+      "alt": "Electric pump maintenance carried out by VART Soluções"
+    },
+    "eletricidade": {
+      "title": "Electrical work",
+      "tagline": "Wiring and conductor connections.",
+      "alt": "Electrical conductor wiring on a VART Soluções job"
+    },
+    "ladrilho": {
+      "title": "Tiling",
+      "tagline": "Tile laying with careful finishing.",
+      "alt": "Tile laying carried out by VART Soluções"
+    },
+    "teto-falso": {
+      "title": "False ceilings",
+      "tagline": "False ceilings built with a clean finish.",
+      "alt": "False ceiling built by VART Soluções"
+    },
+    "termo-acumuladores": {
+      "title": "Storage water heaters",
+      "tagline": "Installation, repair and maintenance.",
+      "alt": "Graphic card for the Storage water heaters service (brand illustration, not a photograph of a job)"
+    },
+    "montagem-de-filtros": {
+      "title": "Filter installation and maintenance",
+      "tagline": "Pool filters: installation, start-up and maintenance.",
+      "alt": "Graphic card for the Filter installation and maintenance service (brand illustration, not a photograph of a job)"
+    },
+    "pintura": {
+      "title": "Painting",
+      "tagline": "Painting with a clean finish.",
+      "alt": "Graphic card for the Painting service (brand illustration, not a photograph of a job)"
+    }
+  }
+}

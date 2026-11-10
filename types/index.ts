@@ -85,12 +85,7 @@ export interface CompanyInfo {
 
 export interface HeroSlide {
   id: string;
-  /** Linha curta acima do título do slide (área de serviço). */
-  eyebrow: string;
-  title: string;
-  description: string;
   image: string;
-  imageAlt: string;
   href: string;
   /** Onde aparece: fotos verticais de baixa resolução ficam só em 'mobile'. */
   show: 'all' | 'mobile' | 'desktop';

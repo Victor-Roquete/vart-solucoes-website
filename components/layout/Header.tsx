@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu } from 'lucide-react';
@@ -9,8 +9,10 @@ import { cn } from '@/lib/utils';
 import { mainNav } from '@/data/navigation';
 import { Logo } from '@/components/brand/Logo';
 import { MobileMenu } from '@/components/layout/MobileMenu';
+import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher';
 
 export function Header() {
+  const t = useTranslations('common');
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,7 +52,7 @@ export function Header() {
           <Logo tone='light' compact={scrolled} />
 
           {/* Navegação desktop */}
-          <nav aria-label='Navegação principal' className='hidden lg:block'>
+          <nav aria-label={t('aria.mainNav')} className='hidden lg:block'>
             <ul className='flex items-center gap-9'>
               {mainNav.map((item) => {
                 const active =
@@ -68,7 +70,7 @@ export function Header() {
                         active ? 'text-white' : 'text-white/65 hover:text-white'
                       )}
                     >
-                      {item.label}
+                      {t(`nav.${item.key}`)}
                       <span
                         aria-hidden='true'
                         className={cn(
@@ -86,18 +88,21 @@ export function Header() {
           </nav>
 
           <div className='flex items-center gap-3'>
+            <div className='hidden lg:block'>
+              <LanguageSwitcher />
+            </div>
             <Link
               href='/contato#orcamento'
               className='hidden h-11 items-center rounded-md bg-white px-6 text-[13px] font-bold uppercase tracking-[0.1em] text-brand-900 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-card-hover lg:inline-flex'
             >
-              Orçamento
+              {t('nav.quoteShort')}
             </Link>
 
             {/* Hambúrguer mobile */}
             <button
               type='button'
               onClick={() => setMenuOpen(true)}
-              aria-label='Abrir menu de navegação'
+              aria-label={t('aria.openMenu')}
               aria-expanded={menuOpen}
               className='inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/15 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10 lg:hidden'
             >

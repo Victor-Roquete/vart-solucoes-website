@@ -1,9 +1,11 @@
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { company } from '@/data/company';
 import { differentials } from '@/data/home';
 import { processSteps } from '@/data/home';
 import { PageHero } from '@/components/layout/PageHero';
+import { pageHeroes } from '@/data/page-heroes';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -19,12 +21,19 @@ export const metadata: Metadata = {
 /**
  * /sobre — história, compromissos e forma de trabalhar da VART.
  */
-export default function SobrePage() {
+export default async function SobrePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <PageHero
+        image={pageHeroes.sobre}
         eyebrow='Sobre nós'
-        title='Técnica, compromisso e trabalho comprovado.'
+        title='Técnica, compromisso e trabalho documentado.'
         description={company.shortDescription}
       />
 
@@ -38,10 +47,11 @@ export default function SobrePage() {
               />
               <div className='relative aspect-[4/3] overflow-hidden rounded-xl shadow-card'>
                 <Image
-                  src='/assets/services/canalizacao/obra-onga-montagem-de-eletrobomba.avif'
-                  alt='Equipa da VART Soluções na montagem de eletrobomba'
+                  src='/assets/services/canalizacao/patriota-vias-express/instalacao-redes-de-agua-reservatorio-elevado-6.webp'
+                  alt='Instalação de rede de água executada pela VART Soluções'
                   fill
                   sizes='(min-width: 1024px) 46vw, 92vw'
+                  className='object-cover'
                 />
               </div>
             </Reveal>
@@ -49,7 +59,7 @@ export default function SobrePage() {
             <div>
               <SectionHeading
                 eyebrow='A empresa'
-                title='A VART Soluções nasceu para resolver.'
+                title='Instalações bem feitas, do primeiro ao último teste.'
               />
               {company.longDescription.map((paragraph) => (
                 <Reveal key={paragraph.slice(0, 24)} delay={0.1}>

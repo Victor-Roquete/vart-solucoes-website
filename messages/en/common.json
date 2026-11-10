@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About us",
+    "contact": "Contact",
+    "quote": "Request a quote",
+    "quoteShort": "Quote"
+  },
+  "aria": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "openMenu": "Open navigation menu",
+    "menu": "Navigation menu",
+    "closeMenu": "Close navigation menu",
+    "menuNav": "Menu navigation",
+    "whatsapp": "Chat with VART Soluções on WhatsApp",
+    "homeLink": "VART Soluções — home page"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "footer": {
+    "tagline": "Plumbing, electric pumps, swimming pools, electrical work and finishing — tiling, false ceilings and painting — carried out with precision, rigour and commitment to the result.",
+    "social": "Social media",
+    "servicesAria": "Services in the footer",
+    "companyAria": "Company in the footer",
+    "company": "Company",
+    "rights": "All rights reserved."
+  },
+  "hours": {
+    "value": "Mon–Fri · 8:00 am to 6:00 pm"
+  },
+  "whatsapp": {
+    "defaultMessage": "Hello VART Soluções! I would like to request a quote.",
+    "tooltip": "Talk to us"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "back": "Back to home"
+  },
+  "seo": {
+    "titleSuffix": "Technical Services and Solutions in Angola",
+    "description": "Plumbing, electric pumps, swimming pools, electrical work and finishing — tiling, false ceilings and painting — carried out with precision, rigour and commitment to the result.",
+    "keywords": [
+      "VART Soluções",
+      "plumbing Luanda",
+      "hydraulic installations Angola",
+      "electric pumps",
+      "swimming pools",
+      "technical maintenance",
+      "services Luanda",
+      "electrician Luanda",
+      "tiling Luanda",
+      "false ceiling Luanda",
+      "painting Luanda"
+    ]
+  }
+}

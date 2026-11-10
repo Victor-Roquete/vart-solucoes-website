@@ -1,5 +1,6 @@
 import type { LucideIcon } from 'lucide-react';
 import { Handshake, HardHat, Layers, ShieldCheck } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { differentials } from '@/data/home';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
@@ -18,13 +19,14 @@ const iconMap: Record<string, LucideIcon> = {
  * Cards com spotlight que segue o cursor e numeração editorial.
  */
 export function DifferentialsSection() {
+  const t = useTranslations('home.differentials');
   return (
     <section className='py-20 md:py-28'>
       <Container>
         <SectionHeading
-          eyebrow='Por que a VART'
-          title='Um parceiro técnico em quem pode confiar.'
-          description='Cada serviço é conduzido com a mesma disciplina, independentemente da dimensão da obra.'
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
@@ -46,10 +48,10 @@ export function DifferentialsSection() {
                     </span>
                   </div>
                   <h3 className='mt-6 text-lg font-extrabold text-ink'>
-                    {item.title}
+                    {t(`items.${item.id}.title`)}
                   </h3>
                   <p className='mt-2.5 text-sm leading-relaxed text-muted'>
-                    {item.description}
+                    {t(`items.${item.id}.description`)}
                   </p>
                 </SpotlightCard>
               </Reveal>
