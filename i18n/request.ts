@@ -6,7 +6,7 @@ import { routing } from './routing';
  * Ficheiros em messages/<idioma>/<namespace>.json.
  * Acrescentar aqui cada namespace novo à medida que as secções são traduzidas.
  */
-const NAMESPACES = ['common', 'home', 'services', 'projects', 'company'] as const;
+const NAMESPACES = ['common', 'home', 'services', 'projects', 'company', 'pages', 'quote'] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;

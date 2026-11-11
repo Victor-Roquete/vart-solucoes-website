@@ -1,0 +1,13 @@
+{
+  "name": "Name *",
+  "namePh": "Your name",
+  "phone": "Phone *",
+  "phonePh": "+244 9XX XXX XXX",
+  "service": "Type of service",
+  "location": "Location",
+  "locationPh": "Neighbourhood / Municipality",
+  "description": "Description of the work",
+  "descriptionPh": "Describe what you need (e.g. water network installation in a two-storey house…)",
+  "submit": "Send request via WhatsApp",
+  "note": "Fields marked * are required. We normally reply within business hours."
+}

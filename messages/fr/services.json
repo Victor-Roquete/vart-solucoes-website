@@ -3,62 +3,206 @@
     "canalizacao": {
       "title": "Plomberie",
       "tagline": "Réseaux d'eau en PPR, cuivre et PVC.",
-      "alt": "Tuyauterie en PPR installée par VART Soluções"
+      "alt": "Tuyauterie en PPR installée par VART Soluções",
+      "description": "Installation, remplacement et réparation de tuyauteries, raccords, vannes et accessoires. Chaque intervention commence par comprendre l'état du réseau et se termine par des raccords vérifiés et un fonctionnement testé.",
+      "bullets": [
+        "Réseaux d'eau froide et chaude (PPR, PVC, cuivre)",
+        "Nouvelles installations et remplacement d'anciennes tuyauteries",
+        "Réseaux d'évacuation et de drainage en PVC"
+      ]
     },
     "instalacao-de-eletrobomba": {
       "title": "Installation d'électropompe",
       "tagline": "Montage, mise en service et essai du système de pompage.",
-      "alt": "Montage d'une électropompe sur un chantier de VART Soluções"
+      "alt": "Montage d'une électropompe sur un chantier de VART Soluções",
+      "description": "Installation d'électropompes à partir de l'analyse de l'ensemble — captage, aspiration, refoulement, clapets, commandes et alimentation — pour que la pompe fonctionne bien et reste protégée.",
+      "bullets": [
+        "Montage de l'électropompe et des tuyauteries d'aspiration et de refoulement",
+        "Pose de clapets de pied et de clapets anti-retour",
+        "Fixation des tuyauteries et protection contre le coup de bélier",
+        "Mise en service et essai de fonctionnement"
+      ],
+      "checks": [
+        "Origine et qualité de l'eau : sans solides, fibres ni huiles, et besoin d'un filtre à l'entrée",
+        "Clapet de pied immergé et de diamètre adapté à l'aspiration",
+        "Clapet anti-retour au refoulement, près de la pompe, et clapets intermédiaires lorsque le dénivelé est important",
+        "Fixation des tuyauteries, pour éviter les efforts sur les orifices de la pompe et le coup de bélier",
+        "Alimentation et commandes : raccordements électriques uniquement par un professionnel habilité",
+        "À la mise en service : pression, bruit, vibrations, échauffement et absence de fuites"
+      ],
+      "limits": "Le dimensionnement de la pompe dépend des données de l'installation et est confirmé sur place. Les travaux sur le tableau électrique ou sur des équipements exigeant un technicien agréé sont coordonnés avec le professionnel habilité."
     },
     "manutencao-preventiva-de-eletrobombas": {
       "title": "Maintenance préventive des électropompes",
       "tagline": "Inspections pour détecter l'usure avant la panne.",
-      "alt": "Maintenance d'une électropompe réalisée par VART Soluções"
+      "alt": "Maintenance d'une électropompe réalisée par VART Soluções",
+      "description": "Plan d'inspection adapté à l'installation et à l'usage, pour détecter l'usure et les défaillances avant l'arrêt de la pompe. La fréquence des visites est définie après une évaluation sur place.",
+      "bullets": [
+        "Inspection périodique du fonctionnement automatique",
+        "Vérification du pressostat et des cycles de démarrage",
+        "Vérification des clapets de pied et anti-retour",
+        "Nettoyage des filtres à eau",
+        "Compte rendu de l'intervention et recommandations au client"
+      ],
+      "checks": [
+        "Fonctionnement automatique de la pompe : démarrage et arrêt",
+        "Étanchéité du clapet de pied",
+        "Pressostat et flotteur de pressurisation, le cas échéant",
+        "Protection contre le manque d'eau, le cas échéant",
+        "Filtres à eau et clapets anti-retour",
+        "Bruit, vibrations, échauffement et fuites",
+        "État des interrupteurs, relais et fusibles, par un professionnel habilité"
+      ],
+      "limits": "La fréquence des visites et les actions incluses dépendent de l'équipement, de l'usage et des indications du fabricant, et sont convenues par écrit dans le devis."
     },
     "piscinas": {
       "title": "Piscines",
       "tagline": "Circulation, filtration et traitement de l'eau.",
-      "alt": "Pompe de piscine installée par VART Soluções"
+      "alt": "Pompe de piscine installée par VART Soluções",
+      "description": "Installation et maintenance de systèmes de circulation et de filtration de piscines : pompes, filtres et tuyauteries.",
+      "bullets": [
+        "Montage de pompes et de systèmes de filtration",
+        "Correction d'installations existantes",
+        "Maintenance périodique"
+      ]
     },
     "deteccao-de-fugas": {
       "title": "Détection de fuites",
       "tagline": "Essais d'étanchéité et diagnostic précis.",
-      "alt": "Essai de fuite sur une installation hydraulique réalisé par VART Soluções"
+      "alt": "Essai de fuite sur une installation hydraulique réalisé par VART Soluções",
+      "description": "Essais de pression et d'étanchéité pour identifier l'origine probable d'une fuite avant de choisir la méthode de réparation. Lorsqu'il faut ouvrir un mur ou un sol, nous l'expliquons d'abord au client.",
+      "bullets": [
+        "Essai d'étanchéité sur réseaux neufs et existants",
+        "Inspection et localisation de l'origine probable de la fuite",
+        "Réparation et vérification de l'étanchéité"
+      ]
     },
     "manutencao": {
       "title": "Maintenance technique",
       "tagline": "Préventive et corrective pour installations et équipements.",
-      "alt": "Maintenance d'une électropompe réalisée par VART Soluções"
+      "alt": "Maintenance d'une électropompe réalisée par VART Soluções",
+      "description": "Inspections et actions programmées pour réduire les pannes et prolonger la durée de vie des installations hydrauliques et des équipements, avec intervention sur les pannes lorsqu'elles surviennent.",
+      "bullets": [
+        "Maintenance préventive programmée",
+        "Réparation de pannes sur pompes et réseaux",
+        "Recommandations au client après chaque intervention"
+      ]
     },
     "eletricidade": {
       "title": "Électricité",
       "tagline": "Câblage et raccordement des conducteurs.",
-      "alt": "Câblage de conducteurs électriques sur un chantier de VART Soluções"
+      "alt": "Câblage de conducteurs électriques sur un chantier de VART Soluções",
+      "description": "Passage et raccordement de conducteurs sur chantier, avec évaluation préalable sur place, exécution organisée et vérification finale du travail réalisé.",
+      "bullets": [
+        "Passage et raccordement de conducteurs",
+        "Évaluation sur place avant le devis",
+        "Vérification finale du travail réalisé"
+      ]
     },
     "ladrilho": {
       "title": "Pose de carrelage",
       "tagline": "Pose de carrelage avec une finition soignée.",
-      "alt": "Pose de carrelage réalisée par VART Soluções"
+      "alt": "Pose de carrelage réalisée par VART Soluções",
+      "description": "Pose de carrelage sur chantier, y compris escaliers et salles de bains, avec attention à l'alignement et à la finition.",
+      "bullets": [
+        "Pose dans les escaliers et les salles de bains",
+        "Devis avec périmètre et matériaux définis",
+        "Nettoyage et remise de la zone terminée"
+      ]
     },
     "teto-falso": {
       "title": "Faux plafonds",
       "tagline": "Réalisation de faux plafonds avec une finition propre.",
-      "alt": "Faux plafond réalisé par VART Soluções"
+      "alt": "Faux plafond réalisé par VART Soluções",
+      "description": "Réalisation de faux plafonds avec une finition propre, avec devis et périmètre définis avant les travaux.",
+      "bullets": [
+        "Évaluation sur place avant le devis",
+        "Exécution organisée et zone propre à la fin"
+      ]
     },
     "termo-acumuladores": {
       "title": "Ballons d'eau chaude",
       "tagline": "Installation, réparation et maintenance.",
-      "alt": "Carte graphique du service Ballons d'eau chaude (illustration de la marque, pas une photographie de chantier)"
+      "alt": "Carte graphique du service Ballons d'eau chaude (illustration de la marque, pas une photographie de chantier)",
+      "description": "Installation, remplacement, vérification et maintenance de ballons d'eau chaude, selon les instructions du fabricant et avec attention aux raccordements hydrauliques et aux dispositifs de sécurité.",
+      "bullets": [
+        "Installation et remplacement de ballons d'eau chaude",
+        "Montage du groupe de sécurité hydraulique",
+        "Réparation de fuites et de vannes",
+        "Maintenance périodique selon le fabricant"
+      ],
+      "checks": [
+        "Modèle, capacité et conditions du lieu : support, espace et accessibilité",
+        "Groupe de sécurité : vanne d'arrêt, soupape de sécurité, vase d'expansion, clapet anti-retour et réducteur de pression",
+        "Évacuation de la soupape de sécurité dégagée, orientée vers le bas et raccordée à une évacuation",
+        "Fonctionnement de la soupape de sécurité, à l'aide de la manette d'essai",
+        "État de l'anode de protection, sur les modèles qui en sont équipés, selon le fabricant",
+        "Pression du réseau à l'entrée de l'équipement",
+        "Étanchéité des raccordements hydrauliques"
+      ],
+      "limits": "Toute intervention est faite avec l'alimentation électrique coupée, et la partie électrique uniquement par un professionnel habilité. L'évacuation de la soupape de sécurité ne doit jamais être obstruée ; un égouttement pendant le chauffage peut être normal. Pour les équipements sous garantie, on suit les conditions du fabricant."
     },
     "montagem-de-filtros": {
       "title": "Montage et maintenance de filtres",
       "tagline": "Filtres de piscine : montage, mise en service et maintenance.",
-      "alt": "Carte graphique du service Montage et maintenance de filtres (illustration de la marque, pas une photographie de chantier)"
+      "alt": "Carte graphique du service Montage et maintenance de filtres (illustration de la marque, pas une photographie de chantier)",
+      "description": "Montage de filtres de piscine avec pompe, vanne multivoies et tuyauteries, et maintenance de l'ensemble de filtration, pour que l'eau circule et soit filtrée comme le prévoit l'équipement.",
+      "bullets": [
+        "Installation du filtre sur une base stable et de niveau",
+        "Raccordement de la pompe, de la vanne multivoies et du refoulement",
+        "Chargement du sable, le cas échéant",
+        "Mise en service et vérification de la pression au manomètre",
+        "Maintenance et remplacement de composants"
+      ],
+      "checks": [
+        "Base du filtre stable, solide et de niveau",
+        "Clapet anti-retour, si le filtre est au-dessus du niveau de l'eau",
+        "Vanne multivoies : filtration, lavage à contre-courant, rinçage, recirculation, vidange et fermeture",
+        "Manœuvres de la vanne toujours avec la pompe arrêtée",
+        "Sable mis en place avant de raccorder les tuyaux à la vanne",
+        "Pression initiale avec le filtre propre, notée comme référence",
+        "Étanchéité des raccords et fonctionnement de la pompe"
+      ],
+      "limits": "La pression maximale de service et la charge de sable suivent les indications du fabricant du filtre. Les raccordements électriques de l'équipement de piscine sont réalisés par un professionnel habilité."
     },
     "pintura": {
       "title": "Peinture",
       "tagline": "Peinture avec une finition propre.",
-      "alt": "Carte graphique du service Peinture (illustration de la marque, pas une photographie de chantier)"
+      "alt": "Carte graphique du service Peinture (illustration de la marque, pas une photographie de chantier)",
+      "description": "Réalisation de peintures avec une finition propre, protection de la zone de travail et devis avec périmètre défini avant les travaux.",
+      "bullets": [
+        "Évaluation sur place avant le devis",
+        "Protection de la zone de travail",
+        "Zone propre et remise à la fin"
+      ],
+      "checks": [
+        "État des surfaces et besoin de préparation",
+        "Matériaux adaptés au type de surface",
+        "Protection des sols, du mobilier et des zones de circulation"
+      ],
+      "limits": "Le type de peinture, le nombre de couches et le délai dépendent de l'évaluation sur place et sont définis dans le devis."
     }
+  },
+  "categories": {
+    "hidraulica": "Hydraulique",
+    "eletrica": "Électricité",
+    "acabamentos": "Finitions"
+  },
+  "page": {
+    "meta": {
+      "title": "Services",
+      "description": "Plomberie, électropompes, piscines, détection de fuites, maintenance technique, électricité, carrelage, faux plafonds et peinture à Luanda. Découvrez les services de VART Soluções."
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Des solutions techniques intégrées.",
+      "description": "De l'installation à la maintenance, chaque service suit la même méthode : évaluation, devis clair, exécution organisée et vérification finale.",
+      "imageAlt": "Réseau hydraulique en PPR installé par VART Soluções"
+    },
+    "navLabel": "Domaines de service",
+    "checksTitle": "Ce que nous vérifions",
+    "limitsLabel": "Limites d'intervention :",
+    "galleryLabel": "Photographies : {title}",
+    "galleryAlt": "{title} : photographie {n} d'un travail réalisé par VART Soluções"
   }
 }

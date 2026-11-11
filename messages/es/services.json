@@ -3,62 +3,206 @@
     "canalizacao": {
       "title": "Fontanería",
       "tagline": "Redes de agua en PPR, cobre y PVC.",
-      "alt": "Tubería PPR instalada por VART Soluções"
+      "alt": "Tubería PPR instalada por VART Soluções",
+      "description": "Instalación, sustitución y reparación de tuberías, conexiones, válvulas y accesorios. Cada intervención empieza por comprender el estado de la red y termina con conexiones verificadas y funcionamiento probado.",
+      "bullets": [
+        "Redes de agua fría y caliente (PPR, PVC, cobre)",
+        "Nuevas instalaciones y sustitución de tuberías antiguas",
+        "Redes de saneamiento y drenaje en PVC"
+      ]
     },
     "instalacao-de-eletrobomba": {
       "title": "Instalación de electrobomba",
       "tagline": "Montaje, puesta en marcha y prueba del sistema de bombeo.",
-      "alt": "Montaje de electrobomba en una obra de VART Soluções"
+      "alt": "Montaje de electrobomba en una obra de VART Soluções",
+      "description": "Instalación de electrobombas a partir del análisis del conjunto —captación, aspiración, impulsión, válvulas, mandos y alimentación— para que la bomba funcione bien y quede protegida.",
+      "bullets": [
+        "Montaje de la electrobomba y de las tuberías de aspiración e impulsión",
+        "Instalación de válvulas de pie y de retención",
+        "Fijación de las tuberías y protección contra el golpe de ariete",
+        "Puesta en marcha y prueba de funcionamiento"
+      ],
+      "checks": [
+        "Origen y calidad del agua: sin sólidos, fibras ni aceites, y necesidad de filtro en la entrada",
+        "Válvula de pie sumergida y con diámetro adecuado a la aspiración",
+        "Válvula de retención en la impulsión, junto a la bomba, e intermedias cuando el desnivel es grande",
+        "Fijación de las tuberías, para evitar esfuerzos en las bocas de la bomba y golpe de ariete",
+        "Alimentación y mandos: conexiones eléctricas solo por un profesional habilitado",
+        "En la puesta en marcha: presión, ruido, vibración, calentamiento y ausencia de fugas"
+      ],
+      "limits": "El dimensionamiento de la bomba depende de los datos de la instalación y se confirma in situ. Los trabajos en el cuadro eléctrico o en equipos que exijan un técnico autorizado se coordinan con el profesional habilitado."
     },
     "manutencao-preventiva-de-eletrobombas": {
       "title": "Mantenimiento preventivo de electrobombas",
       "tagline": "Inspecciones para detectar el desgaste antes de la avería.",
-      "alt": "Mantenimiento de electrobomba realizado por VART Soluções"
+      "alt": "Mantenimiento de electrobomba realizado por VART Soluções",
+      "description": "Plan de inspección adaptado a la instalación y al uso, para detectar el desgaste y los fallos antes de que la bomba se pare. La frecuencia de las visitas se define tras la evaluación in situ.",
+      "bullets": [
+        "Inspección periódica del funcionamiento automático",
+        "Verificación del presostato y de los ciclos de arranque",
+        "Verificación de válvulas de pie y de retención",
+        "Limpieza de filtros de agua",
+        "Registro de la intervención y recomendaciones al cliente"
+      ],
+      "checks": [
+        "Funcionamiento automático de la bomba: arranque y parada",
+        "Estanqueidad de la válvula de pie",
+        "Presostato y boya de presurización, cuando existan",
+        "Protección contra falta de agua, cuando exista",
+        "Filtros de agua y válvulas de retención",
+        "Ruido, vibración, calentamiento y fugas",
+        "Estado de interruptores, relés y fusibles, por un profesional habilitado"
+      ],
+      "limits": "La frecuencia de las visitas y las acciones incluidas dependen del equipo, del uso y de las indicaciones del fabricante, y se acuerdan por escrito en el presupuesto."
     },
     "piscinas": {
       "title": "Piscinas",
       "tagline": "Circulación, filtrado y tratamiento del agua.",
-      "alt": "Bomba de piscina instalada por VART Soluções"
+      "alt": "Bomba de piscina instalada por VART Soluções",
+      "description": "Instalación y mantenimiento de sistemas de circulación y filtrado de piscinas: bombas, filtros y tuberías.",
+      "bullets": [
+        "Montaje de bombas y sistemas de filtrado",
+        "Corrección de instalaciones existentes",
+        "Mantenimiento periódico"
+      ]
     },
     "deteccao-de-fugas": {
       "title": "Detección de fugas",
       "tagline": "Pruebas de estanqueidad y diagnóstico preciso.",
-      "alt": "Prueba de fuga en una instalación hidráulica realizada por VART Soluções"
+      "alt": "Prueba de fuga en una instalación hidráulica realizada por VART Soluções",
+      "description": "Pruebas de presión y estanqueidad para identificar el origen probable de una fuga antes de elegir el método de reparación. Cuando sea necesario abrir una pared o un pavimento, se lo explicamos primero al cliente.",
+      "bullets": [
+        "Prueba de estanqueidad en redes nuevas y existentes",
+        "Inspección y localización del origen probable de la fuga",
+        "Reparación y verificación de la estanqueidad"
+      ]
     },
     "manutencao": {
       "title": "Mantenimiento técnico",
       "tagline": "Preventivo y correctivo para instalaciones y equipos.",
-      "alt": "Mantenimiento de electrobomba realizado por VART Soluções"
+      "alt": "Mantenimiento de electrobomba realizado por VART Soluções",
+      "description": "Inspecciones y acciones programadas para reducir fallos y prolongar la vida útil de las instalaciones hidráulicas y de los equipos, con intervención en las averías cuando surgen.",
+      "bullets": [
+        "Mantenimiento preventivo programado",
+        "Reparación de averías en bombas y redes",
+        "Recomendaciones al cliente después de cada intervención"
+      ]
     },
     "eletricidade": {
       "title": "Electricidad",
       "tagline": "Cableado y conexión de conductores.",
-      "alt": "Cableado de conductores eléctricos en una obra de VART Soluções"
+      "alt": "Cableado de conductores eléctricos en una obra de VART Soluções",
+      "description": "Tendido y conexión de conductores en obra, con evaluación previa in situ, ejecución ordenada y verificación final del trabajo realizado.",
+      "bullets": [
+        "Tendido y conexión de conductores",
+        "Evaluación in situ antes del presupuesto",
+        "Verificación final del trabajo realizado"
+      ]
     },
     "ladrilho": {
       "title": "Colocación de baldosas",
       "tagline": "Colocación de baldosas con acabado cuidado.",
-      "alt": "Colocación de baldosas ejecutada por VART Soluções"
+      "alt": "Colocación de baldosas ejecutada por VART Soluções",
+      "description": "Colocación de baldosas en obra, incluidas escaleras y baños, con atención a la alineación y al acabado final.",
+      "bullets": [
+        "Colocación en escaleras y baños",
+        "Presupuesto con alcance y materiales definidos",
+        "Limpieza y entrega de la zona terminada"
+      ]
     },
     "teto-falso": {
       "title": "Falsos techos",
       "tagline": "Ejecución de falsos techos con acabado limpio.",
-      "alt": "Falso techo ejecutado por VART Soluções"
+      "alt": "Falso techo ejecutado por VART Soluções",
+      "description": "Ejecución de falsos techos con acabado limpio, con presupuesto y alcance definidos antes de la obra.",
+      "bullets": [
+        "Evaluación in situ antes del presupuesto",
+        "Ejecución ordenada y zona limpia al final"
+      ]
     },
     "termo-acumuladores": {
       "title": "Termoacumuladores",
       "tagline": "Instalación, reparación y mantenimiento.",
-      "alt": "Tarjeta gráfica del servicio Termoacumuladores (ilustración de la marca, no es una fotografía de obra)"
+      "alt": "Tarjeta gráfica del servicio Termoacumuladores (ilustración de la marca, no es una fotografía de obra)",
+      "description": "Instalación, sustitución, revisión y mantenimiento de termoacumuladores, siguiendo las instrucciones del fabricante y con atención a las conexiones hidráulicas y a los dispositivos de seguridad.",
+      "bullets": [
+        "Instalación y sustitución de termoacumuladores",
+        "Montaje del grupo de seguridad hidráulico",
+        "Reparación de fugas y de válvulas",
+        "Mantenimiento periódico según el fabricante"
+      ],
+      "checks": [
+        "Modelo, capacidad y condiciones del lugar: soporte, espacio y accesibilidad",
+        "Grupo de seguridad: válvula de corte, de seguridad, vaso de expansión, antirretorno y reductora de presión",
+        "Descarga de la válvula de seguridad libre, orientada hacia abajo y conectada a un desagüe",
+        "Funcionamiento de la válvula de seguridad, mediante la palanca de prueba",
+        "Estado del ánodo de protección, en los modelos que lo tienen, según el fabricante",
+        "Presión de la red a la entrada del equipo",
+        "Estanqueidad de las conexiones hidráulicas"
+      ],
+      "limits": "Cualquier intervención se realiza con la alimentación eléctrica desconectada, y la parte eléctrica solo por un profesional habilitado. La descarga de la válvula de seguridad nunca debe obstruirse; que gotee durante el calentamiento puede ser normal. En equipos cubiertos por garantía se siguen las condiciones del fabricante."
     },
     "montagem-de-filtros": {
       "title": "Montaje y mantenimiento de filtros",
       "tagline": "Filtros de piscina: montaje, puesta en marcha y mantenimiento.",
-      "alt": "Tarjeta gráfica del servicio Montaje y mantenimiento de filtros (ilustración de la marca, no es una fotografía de obra)"
+      "alt": "Tarjeta gráfica del servicio Montaje y mantenimiento de filtros (ilustración de la marca, no es una fotografía de obra)",
+      "description": "Montaje de filtros de piscina con bomba, válvula selectora y tuberías, y mantenimiento del conjunto de filtrado, para que el agua circule y se filtre como prevé el equipo.",
+      "bullets": [
+        "Instalación del filtro sobre una base estable y nivelada",
+        "Conexión de la bomba, de la válvula selectora y del retorno",
+        "Carga de arena, cuando proceda",
+        "Puesta en marcha y verificación de la presión en el manómetro",
+        "Mantenimiento y sustitución de componentes"
+      ],
+      "checks": [
+        "Base del filtro estable, sólida y nivelada",
+        "Válvula antirretorno, si el filtro queda por encima del nivel del agua",
+        "Válvula selectora: filtrado, contralavado, enjuague, recirculación, desagüe y cierre",
+        "Maniobras de la válvula siempre con la bomba apagada",
+        "Arena colocada antes de conectar las tuberías a la válvula",
+        "Presión inicial con el filtro limpio, registrada como referencia",
+        "Estanqueidad de las conexiones y funcionamiento de la bomba"
+      ],
+      "limits": "La presión máxima de funcionamiento y la carga de arena siguen las indicaciones del fabricante del filtro. Las conexiones eléctricas del equipo de piscina las realiza un profesional habilitado."
     },
     "pintura": {
       "title": "Pintura",
       "tagline": "Pintura con acabado limpio.",
-      "alt": "Tarjeta gráfica del servicio Pintura (ilustración de la marca, no es una fotografía de obra)"
+      "alt": "Tarjeta gráfica del servicio Pintura (ilustración de la marca, no es una fotografía de obra)",
+      "description": "Ejecución de pinturas con acabado limpio, protección de la zona de trabajo y presupuesto con alcance definido antes de la obra.",
+      "bullets": [
+        "Evaluación in situ antes del presupuesto",
+        "Protección de la zona de trabajo",
+        "Zona limpia y entrega al final"
+      ],
+      "checks": [
+        "Estado de las superficies y necesidad de preparación",
+        "Materiales adecuados al tipo de superficie",
+        "Protección de suelos, mobiliario y zonas de circulación"
+      ],
+      "limits": "El tipo de pintura, el número de manos y el plazo dependen de la evaluación in situ y quedan definidos en el presupuesto."
     }
+  },
+  "categories": {
+    "hidraulica": "Hidráulica",
+    "eletrica": "Eléctrica",
+    "acabamentos": "Acabados"
+  },
+  "page": {
+    "meta": {
+      "title": "Servicios",
+      "description": "Fontanería, electrobombas, piscinas, detección de fugas, mantenimiento técnico, electricidad, colocación de baldosas, falsos techos y pintura en Luanda. Conozca los servicios de VART Soluções."
+    },
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Soluciones técnicas integrales.",
+      "description": "De la instalación al mantenimiento, cada servicio sigue el mismo método: evaluación, presupuesto claro, ejecución ordenada y verificación final.",
+      "imageAlt": "Red hidráulica en PPR instalada por VART Soluções"
+    },
+    "navLabel": "Áreas de servicio",
+    "checksTitle": "Qué verificamos",
+    "limitsLabel": "Límites de actuación:",
+    "galleryLabel": "Fotografías de {title}",
+    "galleryAlt": "{title}: fotografía {n} de un trabajo realizado por VART Soluções"
   }
 }

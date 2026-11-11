@@ -137,7 +137,7 @@ export function Footer() {
       <div className='border-t border-white/10'>
         <Container className='flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/40 md:flex-row'>
           <p>
-            © {year} {company.legalName}. {t('footer.rights')}
+            © {year} {t('footer.owner')}. {t('footer.rights')}
           </p>
           <p>Luanda · Angola</p>
         </Container>

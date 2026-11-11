@@ -1,0 +1,13 @@
+{
+  "name": "Nom *",
+  "namePh": "Votre nom",
+  "phone": "Téléphone *",
+  "phonePh": "+244 9XX XXX XXX",
+  "service": "Type de service",
+  "location": "Adresse",
+  "locationPh": "Quartier / Commune",
+  "description": "Description des travaux",
+  "descriptionPh": "Décrivez votre besoin (ex. : installation d'un réseau hydraulique dans une maison de 2 étages…)",
+  "submit": "Envoyer la demande par WhatsApp",
+  "note": "Les champs marqués * sont obligatoires. Réponse habituelle pendant les heures d'ouverture."
+}

@@ -1,0 +1,54 @@
+{
+  "sobre": {
+    "meta": {
+      "title": "About us",
+      "description": "Plumbing, electric pumps, swimming pools, electrical work and finishing — tiling, false ceilings and painting — carried out with precision, rigour and commitment to the result."
+    },
+    "hero": {
+      "eyebrow": "About us",
+      "title": "Technical skill, commitment and documented work.",
+      "description": "Plumbing, electric pumps, swimming pools, electrical work and finishing — tiling, false ceilings and painting — carried out with precision, rigour and commitment to the result.",
+      "imageAlt": "Water network installation carried out by VART Soluções"
+    },
+    "imageAlt": "Water network installation carried out by VART Soluções",
+    "company": {
+      "eyebrow": "The company",
+      "title": "Installations done right, from the first to the last test."
+    },
+    "commitments": {
+      "eyebrow": "Commitments",
+      "title": "What every VART service always includes."
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "title": "A defined process, a predictable result."
+    }
+  },
+  "projetos": {
+    "meta": {
+      "title": "Projects",
+      "description": "Jobs and installations carried out by VART Soluções in Luanda — plumbing, electric pumps, swimming pools and technical maintenance."
+    },
+    "hero": {
+      "eyebrow": "Projects",
+      "title": "Real jobs, documented in photographs.",
+      "description": "A selection of jobs and installations by VART Soluções. Quality over quantity.",
+      "imageAlt": "PPR water network on a VART Soluções job"
+    }
+  },
+  "contato": {
+    "meta": {
+      "title": "Contact",
+      "description": "Talk to VART Soluções: phone, WhatsApp, email and quote requests for building jobs and installations in Luanda."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your project.",
+      "description": "Quick reply by phone or WhatsApp — and a no-obligation quote.",
+      "imageAlt": "Job carried out by VART Soluções"
+    },
+    "channelsTitle": "Direct channels",
+    "formTitle": "Request your quote",
+    "formText": "Fill in the details and send — the message reaches our WhatsApp directly, neatly organised."
+  }
+}

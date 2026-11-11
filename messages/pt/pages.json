@@ -1,0 +1,54 @@
+{
+  "sobre": {
+    "meta": {
+      "title": "Sobre nós",
+      "description": "Canalização, eletrobombas, piscinas, eletricidade e acabamentos — ladrilho, tetos falsos e pintura — executados com precisão, rigor e compromisso com o resultado."
+    },
+    "hero": {
+      "eyebrow": "Sobre nós",
+      "title": "Técnica, compromisso e trabalho documentado.",
+      "description": "Canalização, eletrobombas, piscinas, eletricidade e acabamentos — ladrilho, tetos falsos e pintura — executados com precisão, rigor e compromisso com o resultado.",
+      "imageAlt": "Instalação de rede de água executada pela VART Soluções"
+    },
+    "imageAlt": "Instalação de rede de água executada pela VART Soluções",
+    "company": {
+      "eyebrow": "A empresa",
+      "title": "Instalações bem feitas, do primeiro ao último teste."
+    },
+    "commitments": {
+      "eyebrow": "Compromissos",
+      "title": "O que nunca falta num serviço da VART."
+    },
+    "process": {
+      "eyebrow": "Como trabalhamos",
+      "title": "Processo definido, resultado previsível."
+    }
+  },
+  "projetos": {
+    "meta": {
+      "title": "Projetos",
+      "description": "Obras e instalações executadas pela VART Soluções em Luanda — canalização, eletrobombas, piscinas e manutenção técnica."
+    },
+    "hero": {
+      "eyebrow": "Projetos",
+      "title": "Obras reais, documentadas em fotografia.",
+      "description": "Uma seleção de obras e instalações da VART Soluções. Qualidade acima de quantidade.",
+      "imageAlt": "Rede de água em PPR numa obra da VART Soluções"
+    }
+  },
+  "contato": {
+    "meta": {
+      "title": "Contacto",
+      "description": "Fale com a VART Soluções: telefone, WhatsApp, email e pedido de orçamento para obras e instalações em Luanda."
+    },
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Vamos falar sobre o seu projeto.",
+      "description": "Resposta rápida por telefone ou WhatsApp — e orçamento sem compromisso.",
+      "imageAlt": "Obra executada pela VART Soluções"
+    },
+    "channelsTitle": "Canais diretos",
+    "formTitle": "Peça o seu orçamento",
+    "formText": "Preencha os dados e envie — a mensagem chega diretamente ao nosso WhatsApp com tudo organizado."
+  }
+}

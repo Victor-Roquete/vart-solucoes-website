@@ -1,11 +1,12 @@
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { company } from '@/data/company';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 import { whatsappLink } from '@/lib/whatsapp';
+import { mapEmbedUrl } from '@/lib/maps';
 
 /**
  * Contacto — canais diretos + mapa. Sem sobrecarregar: o formulário
@@ -15,6 +16,7 @@ export function ContactSection() {
   const t = useTranslations('home.contact');
   const tc = useTranslations('company');
   const tg = useTranslations('common');
+  const locale = useLocale();
   return (
     <section className='py-20 md:py-28'>
       <Container>
@@ -117,7 +119,7 @@ export function ContactSection() {
           <Reveal delay={0.2} className='h-full'>
             <div className='h-full min-h-[320px] overflow-hidden rounded-xl border border-line shadow-card lg:min-h-[440px]'>
               <iframe
-                src={company.mapEmbedUrl}
+                src={mapEmbedUrl(locale)}
                 title={t('mapTitle')}
                 loading='lazy'
                 referrerPolicy='no-referrer-when-downgrade'

@@ -27,7 +27,8 @@
     "servicesAria": "Services in the footer",
     "companyAria": "Company in the footer",
     "company": "Company",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "owner": "VART Soluções"
   },
   "hours": {
     "value": "Mon–Fri · 8:00 am to 6:00 pm"
