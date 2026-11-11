@@ -9,6 +9,8 @@ import { PageHero } from '@/components/layout/PageHero';
 import { pageHeroes } from '@/data/page-heroes';
 import { Reveal } from '@/components/ui/Reveal';
 import { cn } from '@/lib/utils';
+import { BrandCard } from '@/components/ui/BrandCard';
+import { SITE_NAME } from '@/lib/constants';
 import { pageAlternates } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -113,13 +115,22 @@ export default async function ServicosPage({ params }: Props) {
                             )}
                           >
                             <div className='relative min-h-[260px] lg:w-[46%]'>
-                              <Image
-                                src={service.image}
-                                alt={ts(`items.${service.id}.alt`)}
-                                fill
-                                sizes='(min-width: 1024px) 46vw, 100vw'
-                                className='object-cover'
-                              />
+                              {service.image.endsWith('.svg') ? (
+                                <BrandCard
+                                  label={categoryLabel}
+                                  title={title}
+                                  brand={SITE_NAME}
+                                  ariaLabel={ts(`items.${service.id}.alt`)}
+                                />
+                              ) : (
+                                <Image
+                                  src={service.image}
+                                  alt={ts(`items.${service.id}.alt`)}
+                                  fill
+                                  sizes='(min-width: 1024px) 46vw, 100vw'
+                                  className='object-cover'
+                                />
+                              )}
                             </div>
                             <div className='p-7 md:p-10 lg:w-[54%]'>
                               <p className='text-xs font-bold tracking-[0.2em] text-brand-400'>
