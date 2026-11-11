@@ -9,7 +9,9 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { routing } from '@/i18n/routing';
-import { pageAlternates } from '@/lib/seo';
+import { pageSeo } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbList } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -27,7 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t(`items.${project.id}.title`),
     description: t(`items.${project.id}.description`),
-    alternates: pageAlternates(locale, `/projetos/${slug}`),
+    ...pageSeo(
+      locale,
+      `/projetos/${slug}`,
+      t(`items.${project.id}.title`),
+      t(`items.${project.id}.description`)
+    ),
   };
 }
 
@@ -43,6 +50,7 @@ export default async function ProjetoPage({ params }: Props) {
   if (!project) notFound();
 
   const t = await getTranslations('projects');
+  const tp = await getTranslations('pages.projetos');
   const th = await getTranslations('home.projects');
   const tg = await getTranslations('common');
   const key = `items.${project.id}`;
@@ -50,6 +58,12 @@ export default async function ProjetoPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList(locale, [
+          { name: tp('hero.eyebrow'), path: '/projetos' },
+          { name: title, path: `/projetos/${slug}` },
+        ])}
+      />
       <PageHero
         image={{
           src: project.image,

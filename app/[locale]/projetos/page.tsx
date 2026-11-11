@@ -5,7 +5,9 @@ import { PageHero } from '@/components/layout/PageHero';
 import { pageHeroes } from '@/data/page-heroes';
 import { ProjectCard } from '@/components/home/ProjectsSection';
 import { Container } from '@/components/ui/Container';
-import { pageAlternates } from '@/lib/seo';
+import { pageSeo } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbList } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -15,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: pageAlternates(locale, '/projetos'),
+    ...pageSeo(locale, '/projetos', t('meta.title'), t('meta.description')),
   };
 }
 
@@ -29,6 +31,11 @@ export default async function ProjetosPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList(locale, [
+          { name: t('hero.eyebrow'), path: '/projetos' },
+        ])}
+      />
       <PageHero
         image={{ ...pageHeroes.projetos, alt: t('hero.imageAlt') }}
         eyebrow={t('hero.eyebrow')}

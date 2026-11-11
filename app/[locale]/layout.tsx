@@ -14,6 +14,9 @@ import { CustomCursor } from '@/components/ui/CustomCursor';
 import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
 import { routing } from '@/i18n/routing';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { OG_IMAGE } from '@/lib/seo';
+import { siteGraph } from '@/lib/schema';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 // import { Manrope } from 'next/font/google'; // TEMP: rede indisponível
 // TEMP disabled — // TEMP: sem acesso a Google Fonts — usar stack de sistema
@@ -64,9 +67,25 @@ export async function generateMetadata({
       siteName: SITE_NAME,
       title,
       description,
+      images: [OG_IMAGE],
     },
-    twitter: { card: 'summary', title, description },
-    robots: { index: true, follow: true },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [OG_IMAGE.url],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
+    },
   };
 }
 
@@ -84,9 +103,20 @@ export default async function LocaleLayout({ children, params }: Props) {
     getTranslations({ locale, namespace: 'common.aria' }),
   ]);
 
+  const [ts, tseo] = await Promise.all([
+    getTranslations({ locale, namespace: 'services' }),
+    getTranslations({ locale, namespace: 'common.seo' }),
+  ]);
+  const graph = siteGraph(locale, {
+    description: tseo('description'),
+    catalogName: ts('page.hero.eyebrow'),
+    serviceName: (id) => ts(`items.${id}.title`),
+  });
+
   return (
     <html lang={locale} className={manrope.variable}>
       <body>
+        <JsonLd data={graph} />
         <NextIntlClientProvider messages={messages}>
           <a
             href='#conteudo'

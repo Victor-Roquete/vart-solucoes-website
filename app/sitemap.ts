@@ -26,7 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
     return routing.locales.map((locale) => ({
       url: urlFor(locale, route),
-      lastModified: new Date(),
       changeFrequency: route === '/' ? ('weekly' as const) : ('monthly' as const),
       priority: route === '/' ? 1 : 0.7,
       alternates: { languages },

@@ -9,7 +9,9 @@ import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
 import { Button } from '@/components/ui/Button';
-import { pageAlternates } from '@/lib/seo';
+import { pageSeo } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbList } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -19,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: pageAlternates(locale, '/sobre'),
+    ...pageSeo(locale, '/sobre', t('meta.title'), t('meta.description')),
   };
 }
 
@@ -38,6 +40,11 @@ export default async function SobrePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList(locale, [
+          { name: t('hero.eyebrow'), path: '/sobre' },
+        ])}
+      />
       <PageHero
         image={{ ...pageHeroes.sobre, alt: t('hero.imageAlt') }}
         eyebrow={t('hero.eyebrow')}

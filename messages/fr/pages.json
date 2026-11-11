@@ -1,7 +1,7 @@
 {
   "sobre": {
     "meta": {
-      "title": "À propos",
+      "title": "À propos — Services Techniques à Luanda",
       "description": "Plomberie, électropompes, piscines, électricité et finitions — carrelage, faux plafonds et peinture — réalisés avec précision, rigueur et engagement envers le résultat."
     },
     "hero": {
@@ -26,7 +26,7 @@
   },
   "projetos": {
     "meta": {
-      "title": "Projets",
+      "title": "Projets de Plomberie et Électropompes à Luanda",
       "description": "Chantiers et installations réalisés par VART Soluções à Luanda : plomberie, électropompes, piscines et maintenance technique."
     },
     "hero": {
@@ -38,7 +38,7 @@
   },
   "contato": {
     "meta": {
-      "title": "Contact",
+      "title": "Contact et Demande de Devis à Luanda",
       "description": "Parlez à VART Soluções : téléphone, WhatsApp, e-mail et demande de devis pour chantiers et installations à Luanda."
     },
     "hero": {

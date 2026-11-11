@@ -11,7 +11,9 @@ import { Reveal } from '@/components/ui/Reveal';
 import { cn } from '@/lib/utils';
 import { BrandCard } from '@/components/ui/BrandCard';
 import { SITE_NAME } from '@/lib/constants';
-import { pageAlternates } from '@/lib/seo';
+import { pageSeo } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbList } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('page.meta.title'),
     description: t('page.meta.description'),
-    alternates: pageAlternates(locale, '/servicos'),
+    ...pageSeo(locale, '/servicos', t('page.meta.title'), t('page.meta.description')),
   };
 }
 
@@ -59,6 +61,11 @@ export default async function ServicosPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList(locale, [
+          { name: ts('page.hero.eyebrow'), path: '/servicos' },
+        ])}
+      />
       <PageHero
         image={{ ...pageHeroes.servicos, alt: ts('page.hero.imageAlt') }}
         eyebrow={ts('page.hero.eyebrow')}

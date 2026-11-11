@@ -9,7 +9,9 @@ import { QuoteForm } from '@/components/forms/QuoteForm';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 import { whatsappLink } from '@/lib/whatsapp';
 import { mapEmbedUrl } from '@/lib/maps';
-import { pageAlternates } from '@/lib/seo';
+import { pageSeo } from '@/lib/seo';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbList } from '@/lib/schema';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -19,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: pageAlternates(locale, '/contato'),
+    ...pageSeo(locale, '/contato', t('meta.title'), t('meta.description')),
   };
 }
 
@@ -51,6 +53,11 @@ export default async function ContatoPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList(locale, [
+          { name: t('hero.eyebrow'), path: '/contato' },
+        ])}
+      />
       <PageHero
         image={{ ...pageHeroes.contato, alt: t('hero.imageAlt') }}
         eyebrow={t('hero.eyebrow')}
