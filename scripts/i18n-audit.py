@@ -72,6 +72,30 @@ for f in sorted(glob.glob('messages/pt/*.json')):
             elif a == b and re.search(r'[^\W\d_]{4}', a):
                 same[loc].append(f'{name}: {k} = {a[:60]!r}')
 
+# ---------- texto visível (para comparar com o português) ----------
+ALLOW_SAME = {  # iguais ao pt por coincidência legítima (cognatos)
+    'Mapa — VART Soluções, Luanda, Angola',  # es: 'Mapa' é igual
+    'width=device-width, initial-scale=1',   # meta viewport (técnico)
+    'index, follow',                          # meta robots (técnico)
+    'vartsolucoes@gmail.com',                 # email, igual em todos os idiomas
+    'Talatona, Luanda, Angola',               # morada
+    'Luanda · Angola',                        # rodapé
+    'Obra Onga · Luanda',                     # es: igual, nome de obra
+    'Residencial · Luanda',                   # es: igual
+    '+244 9XX XXX XXX',                       # exemplo de telefone no formulário
+    'Contacto | VART',                        # es: título da página, 'Contacto' é igual
+}
+PT_CACHE = {}
+
+
+def segments(raw):
+    """Frases (>= 4 palavras) do texto visível e dos atributos de uma página."""
+    t = BRAND.sub('', rendered(raw))
+    segs = set(re.findall(r'(?:alt|aria-label|title|placeholder|content)="([^"]+)"', t))
+    segs |= {l.strip() for l in re.sub(r'<[^>]+>', '\n', t).split('\n')}
+    return {x for x in segs if len(re.findall(r'[^\W\d_]+', x)) >= 2}
+
+
 # ---------- páginas do sitemap ----------
 sitemap = get('/sitemap.xml')
 paths = sorted({urlparse(u).path or '/' for u in re.findall(r'<loc>([^<]+)</loc>', sitemap)})
@@ -102,6 +126,11 @@ for path in paths:
                   if any(ord(c) > 127 and c.isalpha() and c not in ALLOWED[loc] for c in w)})
     for w in bad[:8]:
         print(f'LETRA ESTRANHA  {path}: {w[:60]!r}'); problems += 1
+    pt_path = '/' + '/'.join(path.split('/')[2:])
+    if pt_path not in PT_CACHE:
+        PT_CACHE[pt_path] = segments(get(pt_path))
+    for seg in sorted(segments(raw) & PT_CACHE[pt_path] - {BRAND.sub('', a).strip() for a in ALLOW_SAME}):
+        print(f'IGUAL AO PT  {path}: {seg[:80]!r}'); problems += 1
     for svg in re.findall(r'(/assets/[^"\'\s)<>]+\.svg)', text):
         svg_seen.setdefault(svg, path)
 
