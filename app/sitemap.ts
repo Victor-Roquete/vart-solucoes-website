@@ -1,8 +1,16 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { SITE_URL } from '@/lib/constants';
+import { projects } from '@/data/projects';
 
-const routes = ['/', '/servicos', '/projetos', '/sobre', '/contato'];
+const routes = [
+  '/',
+  '/servicos',
+  '/projetos',
+  '/sobre',
+  '/contato',
+  ...projects.map((p) => `/projetos/${p.slug}`),
+];
 
 /** URL absoluto de uma rota num idioma (português sem prefixo). */
 function urlFor(locale: string, route: string): string {

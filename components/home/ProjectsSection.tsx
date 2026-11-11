@@ -32,7 +32,7 @@ export function ProjectCard({
   return (
     <Reveal className={`h-full ${className ?? ''}`}>
       <Link
-        href='/projetos'
+        href={`/projetos/${project.slug}`}
         className={`group relative block h-full overflow-hidden rounded-xl shadow-card ${aspect}`}
       >
         <Image

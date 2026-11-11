@@ -74,6 +74,8 @@ for f in sorted(glob.glob('messages/pt/*.json')):
 
 # ---------- texto visível (para comparar com o português) ----------
 ALLOW_SAME = {  # iguais ao pt por coincidência legítima (cognatos)
+    'Obra Golfo · Luanda',                    # es: igual, nome de obra
+    'Patriota Vias Express · Luanda',         # nome próprio, igual em todos
     'Mapa — VART Soluções, Luanda, Angola',  # es: 'Mapa' é igual
     'width=device-width, initial-scale=1',   # meta viewport (técnico)
     'index, follow',                          # meta robots (técnico)

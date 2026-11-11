@@ -42,6 +42,8 @@ export interface Project {
   image: string;
   imageAlt: string;
   featured?: boolean;
+  /** Fotografias reais da obra (página /projetos/<slug>). */
+  gallery?: string[];
 }
 
 export interface ShowcaseSlide {

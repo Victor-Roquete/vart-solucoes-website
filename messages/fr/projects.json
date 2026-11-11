@@ -13,9 +13,9 @@
     "rede-ppr-residencial": {
       "title": "Réseau hydraulique en PPR",
       "category": "Plomberie",
-      "location": "Résidentiel · Luanda",
-      "description": "Réalisation d'un réseau d'eau froide et chaude en PPR pour une habitation, avec fusion contrôlée, fixation correcte et essai d'étanchéité avant la fermeture des murs.",
-      "alt": "Tuyauterie PPR installée dans une habitation par VART Soluções"
+      "location": "Luanda",
+      "description": "Réalisation d'un réseau d'eau froide et chaude en PPR, avec fusion contrôlée, fixation correcte et essai d'étanchéité avant la fermeture des murs.",
+      "alt": "Tuyauterie PPR installée par VART Soluções"
     },
     "teste-estanqueidade": {
       "title": "Essai d'étanchéité",
@@ -23,6 +23,24 @@
       "location": "Luanda",
       "description": "Essai de pression sur un réseau neuf pour vérifier l'étanchéité de tous les raccords avant la remise de l'installation au client.",
       "alt": "Essai d'étanchéité sur une installation hydraulique"
+    },
+    "obra-golfo": {
+      "title": "Réseau d'eau en PPR (extérieur)",
+      "category": "Plomberie",
+      "location": "Chantier Golfo · Luanda",
+      "description": "Installation de réseaux d'eau en PPR en extérieur.",
+      "alt": "Installation d'un réseau d'eau en PPR en extérieur, sur le chantier Golfo"
+    },
+    "patriota-vias-express": {
+      "title": "Réseau d'eau avec réservoir surélevé",
+      "category": "Plomberie",
+      "location": "Patriota Vias Express · Luanda",
+      "description": "Installation de réseaux d'eau avec réservoir surélevé.",
+      "alt": "Installation d'un réseau d'eau avec réservoir surélevé, à Patriota Vias Express"
     }
+  },
+  "page": {
+    "galleryTitle": "Photographies",
+    "galleryAlt": "{title} : photographie {n} d'un travail réalisé par VART Soluções"
   }
 }

@@ -13,9 +13,9 @@
     "rede-ppr-residencial": {
       "title": "Red hidráulica en PPR",
       "category": "Fontanería",
-      "location": "Residencial · Luanda",
-      "description": "Ejecución de red de agua fría y caliente en PPR para una vivienda, con fusión controlada, fijación correcta y prueba de estanqueidad antes de cerrar las paredes.",
-      "alt": "Tubería PPR instalada en una vivienda por VART Soluções"
+      "location": "Luanda",
+      "description": "Ejecución de red de agua fría y caliente en PPR, con fusión controlada, fijación correcta y prueba de estanqueidad antes de cerrar las paredes.",
+      "alt": "Tubería PPR instalada por VART Soluções"
     },
     "teste-estanqueidade": {
       "title": "Prueba de estanqueidad",
@@ -23,6 +23,24 @@
       "location": "Luanda",
       "description": "Prueba de presión en una red nueva para comprobar la estanqueidad de todas las conexiones antes de entregar la instalación al cliente.",
       "alt": "Prueba de estanqueidad en una instalación hidráulica"
+    },
+    "obra-golfo": {
+      "title": "Red de agua en PPR (exterior)",
+      "category": "Fontanería",
+      "location": "Obra Golfo · Luanda",
+      "description": "Instalación de redes de agua en PPR en el exterior.",
+      "alt": "Instalación de red de agua en PPR en el exterior, en la obra Golfo"
+    },
+    "patriota-vias-express": {
+      "title": "Red de agua con depósito elevado",
+      "category": "Fontanería",
+      "location": "Patriota Vias Express · Luanda",
+      "description": "Instalación de redes de agua con depósito elevado.",
+      "alt": "Instalación de red de agua con depósito elevado, en Patriota Vias Express"
     }
+  },
+  "page": {
+    "galleryTitle": "Fotografías",
+    "galleryAlt": "{title}: fotografía {n} de un trabajo realizado por VART Soluções"
   }
 }
