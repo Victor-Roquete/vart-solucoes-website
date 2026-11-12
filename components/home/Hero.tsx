@@ -167,7 +167,7 @@ export function Hero() {
       <div className='relative z-10 flex h-full flex-col justify-end pb-28 pt-28 md:justify-center md:pb-24'>
         <Container>
           <motion.p
-            initial={reducedMotion ? false : { opacity: 0, y: 16 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: EASE_OUT_EXPO }}
             className='flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-brand-300'
@@ -177,7 +177,7 @@ export function Hero() {
           </motion.p>
 
           <motion.h1
-            initial={reducedMotion ? false : { opacity: 0, y: 24 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: EASE_OUT_EXPO }}
             className='mt-6 max-w-3xl text-[40px] font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[72px]'
