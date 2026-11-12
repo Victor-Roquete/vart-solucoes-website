@@ -34,7 +34,7 @@ export function siteGraph(locale: string, ctx: GraphContext) {
         description: ctx.description,
         logo: { '@type': 'ImageObject', url: `${SITE_URL}/icon.svg` },
         image: `${SITE_URL}/og/vart-og.jpg`,
-        telephone: company.phone.href.replace('tel:', ''),
+        telephone: company.phone.value.replace(/\s+/g, ''),
         email: company.email.value,
         address: {
           '@type': 'PostalAddress',

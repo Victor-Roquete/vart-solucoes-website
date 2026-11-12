@@ -93,7 +93,8 @@ PT_CACHE = {}
 def segments(raw):
     """Frases (>= 4 palavras) do texto visível e dos atributos de uma página."""
     t = BRAND.sub('', rendered(raw))
-    segs = set(re.findall(r'(?:alt|aria-label|title|placeholder|content)="([^"]+)"', t))
+    segs = set(re.findall(r'(?:alt|aria-label|title|placeholder)="([^"]+)"', t))
+    segs |= set(re.findall(r'<meta (?:name|property)="(?:description|keywords|og:title|og:description|twitter:title|twitter:description)" content="([^"]*)"', t))
     segs |= {l.strip() for l in re.sub(r'<[^>]+>', '\n', t).split('\n')}
     return {x for x in segs if len(re.findall(r'[^\W\d_]+', x)) >= 2}
 
