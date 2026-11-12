@@ -1,0 +1,46 @@
+{
+  "ui": {
+    "view": "View project"
+  },
+  "items": {
+    "obra-onga-eletrobomba": {
+      "title": "Electric pump installation",
+      "category": "Pumping systems",
+      "location": "Onga site · Luanda",
+      "description": "Assembly and start-up of an electric pump for the site's water supply, with equipment protection and a pressure check throughout the network.",
+      "alt": "Electric pump assembly at the Onga site, in Luanda"
+    },
+    "rede-ppr-residencial": {
+      "title": "PPR hydraulic network",
+      "category": "Plumbing",
+      "location": "Luanda",
+      "description": "Hot and cold water network in PPR, with controlled fusion, correct fixing and a watertightness test before the walls are closed.",
+      "alt": "PPR piping installed by VART Soluções"
+    },
+    "teste-estanqueidade": {
+      "title": "Watertightness test",
+      "category": "Technical diagnosis",
+      "location": "Luanda",
+      "description": "Pressure test on a new network to prove the watertightness of every connection before the installation is handed over to the client.",
+      "alt": "Watertightness test on a hydraulic installation"
+    },
+    "obra-golfo": {
+      "title": "Outdoor PPR water network",
+      "category": "Plumbing",
+      "location": "Golfo site · Luanda",
+      "description": "Installation of PPR water networks outdoors.",
+      "alt": "Outdoor PPR water network installation at the Golfo site"
+    },
+    "patriota-vias-express": {
+      "title": "Water network with elevated reservoir",
+      "category": "Plumbing",
+      "location": "Patriota Vias Express · Luanda",
+      "description": "Installation of water networks with an elevated reservoir.",
+      "alt": "Water network installation with an elevated reservoir at Patriota Vias Express"
+    }
+  },
+  "page": {
+    "galleryTitle": "Photographs",
+    "galleryAlt": "{title}: photograph {n} of work carried out by VART Soluções"
+  }
+}

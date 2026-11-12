@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { Hero } from '@/components/home/Hero';
 import { TrustBar } from '@/components/home/TrustBar';
 import { AboutPreview } from '@/components/home/AboutPreview';
@@ -13,7 +14,13 @@ import { ContactSection } from '@/components/home/ContactSection';
  * Home — funil completo: atrair → apresentar → provar → converter.
  * Ordem definida na especificação (seções com função de negócio clara).
  */
-export default function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Hero />

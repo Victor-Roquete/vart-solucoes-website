@@ -1,0 +1,208 @@
+{
+  "items": {
+    "canalizacao": {
+      "title": "Plumbing",
+      "tagline": "Water networks in PPR, copper and PVC.",
+      "alt": "PPR piping installed by VART Soluções",
+      "description": "Installation, replacement and repair of pipework, connections, valves and fittings. Every job starts by understanding the state of the network and ends with checked connections and tested operation.",
+      "bullets": [
+        "Hot and cold water networks (PPR, PVC, copper)",
+        "New installations and replacement of old pipework",
+        "Sewer and drainage networks in PVC"
+      ]
+    },
+    "instalacao-de-eletrobomba": {
+      "title": "Electric pump installation",
+      "tagline": "Assembly, start-up and testing of the pumping system.",
+      "alt": "Electric pump assembly on a VART Soluções job",
+      "description": "Installation of electric pumps based on an analysis of the whole set-up — intake, suction, discharge, valves, controls and power supply — so that the pump works well and stays protected.",
+      "bullets": [
+        "Assembly of the pump and the suction and discharge pipework",
+        "Fitting of foot valves and check valves",
+        "Fixing of the pipework and protection against water hammer",
+        "Start-up and operating test"
+      ],
+      "checks": [
+        "Water source and quality: free of solids, fibres or oils, and whether an inlet filter is needed",
+        "Foot valve submerged and sized to suit the suction",
+        "Check valve on the discharge, next to the pump, and intermediate ones where the height difference is large",
+        "Pipework fixing, to avoid stress on the pump ports and water hammer",
+        "Power supply and controls: electrical connections only by a qualified professional",
+        "At start-up: pressure, noise, vibration, heating and absence of leaks"
+      ],
+      "limits": "Pump sizing depends on the installation data and is confirmed on site. Work on the electrical panel or on equipment that requires an authorised technician is coordinated with the qualified professional."
+    },
+    "manutencao-preventiva-de-eletrobombas": {
+      "title": "Preventive maintenance of electric pumps",
+      "tagline": "Inspections to spot wear before a breakdown.",
+      "alt": "Electric pump maintenance carried out by VART Soluções",
+      "description": "An inspection plan adapted to the installation and its use, to spot wear and faults before the pump stops. The frequency of visits is defined after an assessment on site.",
+      "bullets": [
+        "Periodic inspection of automatic operation",
+        "Check of the pressure switch and start-up cycles",
+        "Check of foot valves and check valves",
+        "Cleaning of water filters",
+        "Record of the work and recommendations to the client"
+      ],
+      "checks": [
+        "Automatic pump operation: start and stop",
+        "Watertightness of the foot valve",
+        "Pressure switch and pressurisation float, where fitted",
+        "Dry-run protection, where fitted",
+        "Water filters and check valves",
+        "Noise, vibration, heating and leaks",
+        "Condition of switches, relays and fuses, by a qualified professional"
+      ],
+      "limits": "The frequency of visits and the actions included depend on the equipment, its use and the manufacturer's instructions, and are agreed in writing in the quote."
+    },
+    "piscinas": {
+      "title": "Swimming pools",
+      "tagline": "Circulation, filtration and water treatment.",
+      "alt": "Pool pump installed by VART Soluções",
+      "description": "Installation and maintenance of pool circulation and filtration systems: pumps, filters and pipework.",
+      "bullets": [
+        "Assembly of pumps and filtration systems",
+        "Correction of existing installations",
+        "Periodic maintenance"
+      ]
+    },
+    "deteccao-de-fugas": {
+      "title": "Leak detection",
+      "tagline": "Watertightness tests and precise diagnosis.",
+      "alt": "Leak test on a hydraulic installation carried out by VART Soluções",
+      "description": "Pressure and watertightness tests to identify the probable origin of a leak before choosing the repair method. When a wall or floor has to be opened, we explain it to the client first.",
+      "bullets": [
+        "Watertightness test on new and existing networks",
+        "Inspection and location of the probable origin of the leak",
+        "Repair and watertightness check"
+      ]
+    },
+    "manutencao": {
+      "title": "Technical maintenance",
+      "tagline": "Preventive and corrective work for installations and equipment.",
+      "alt": "Electric pump maintenance carried out by VART Soluções",
+      "description": "Inspections and scheduled actions to reduce failures and extend the life of hydraulic installations and equipment, with intervention on breakdowns when they occur.",
+      "bullets": [
+        "Scheduled preventive maintenance",
+        "Repair of faults in pumps and networks",
+        "Recommendations to the client after each intervention"
+      ]
+    },
+    "eletricidade": {
+      "title": "Electrical work",
+      "tagline": "Wiring and conductor connections.",
+      "alt": "Electrical conductor wiring on a VART Soluções job",
+      "description": "Pulling and connecting conductors on site, with a prior assessment on location, organised execution and a final check of the work done.",
+      "bullets": [
+        "Pulling and connecting conductors",
+        "Assessment on site before the quote",
+        "Final check of the work carried out"
+      ]
+    },
+    "ladrilho": {
+      "title": "Tiling",
+      "tagline": "Tile laying with careful finishing.",
+      "alt": "Tile laying carried out by VART Soluções",
+      "description": "Tile laying on site, including stairs and bathrooms, with attention to alignment and the final finish.",
+      "bullets": [
+        "Laying on stairs and in bathrooms",
+        "Quote with a defined scope and materials",
+        "Cleaning and handover of the finished area"
+      ]
+    },
+    "teto-falso": {
+      "title": "False ceilings",
+      "tagline": "False ceilings built with a clean finish.",
+      "alt": "False ceiling built by VART Soluções",
+      "description": "False ceilings built with a clean finish, with the quote and scope defined before the job.",
+      "bullets": [
+        "Assessment on site before the quote",
+        "Organised execution and a clean area at the end"
+      ]
+    },
+    "termo-acumuladores": {
+      "title": "Storage water heaters",
+      "tagline": "Installation, repair and maintenance.",
+      "alt": "Graphic card for the Storage water heaters service (brand illustration, not a photograph of a job)",
+      "description": "Installation, replacement, inspection and maintenance of storage water heaters, following the manufacturer's instructions and paying attention to the hydraulic connections and safety devices.",
+      "bullets": [
+        "Installation and replacement of storage water heaters",
+        "Fitting of the hydraulic safety group",
+        "Repair of leaks and valves",
+        "Periodic maintenance according to the manufacturer"
+      ],
+      "checks": [
+        "Model, capacity and site conditions: support, space and accessibility",
+        "Safety group: shut-off valve, safety valve, expansion vessel, non-return valve and pressure-reducing valve",
+        "Safety valve discharge unobstructed, pointing downwards and connected to a drain",
+        "Safety valve operation, using the test lever",
+        "Condition of the protective anode, on models that have one, according to the manufacturer",
+        "Mains pressure at the equipment inlet",
+        "Watertightness of the hydraulic connections"
+      ],
+      "limits": "Any work is done with the power supply switched off, and the electrical part only by a qualified professional. The safety valve discharge must never be blocked; dripping during heating can be normal. For equipment under warranty, the manufacturer's conditions apply."
+    },
+    "montagem-de-filtros": {
+      "title": "Filter installation and maintenance",
+      "tagline": "Pool filters: installation, start-up and maintenance.",
+      "alt": "Graphic card for the Filter installation and maintenance service (brand illustration, not a photograph of a job)",
+      "description": "Installation of pool filters with pump, multiport valve and pipework, and maintenance of the filtration set, so that the water circulates and is filtered as the equipment intends.",
+      "bullets": [
+        "Installing the filter on a stable, level base",
+        "Connecting the pump, the multiport valve and the return",
+        "Loading sand, where applicable",
+        "Start-up and checking the pressure on the gauge",
+        "Maintenance and replacement of components"
+      ],
+      "checks": [
+        "Filter base stable, solid and level",
+        "Non-return valve, if the filter sits above the water level",
+        "Multiport valve: filter, backwash, rinse, recirculate, waste and closed",
+        "Valve operated only with the pump switched off",
+        "Sand placed before the pipes are connected to the valve",
+        "Initial pressure with a clean filter, recorded as a reference",
+        "Watertightness of the connections and pump operation"
+      ],
+      "limits": "Maximum working pressure and sand load follow the filter manufacturer's instructions. Electrical connections of pool equipment are made by a qualified professional."
+    },
+    "pintura": {
+      "title": "Painting",
+      "tagline": "Painting with a clean finish.",
+      "alt": "Graphic card for the Painting service (brand illustration, not a photograph of a job)",
+      "description": "Painting with a clean finish, protection of the work area and a quote with a scope defined before the job.",
+      "bullets": [
+        "Assessment on site before the quote",
+        "Protection of the work area",
+        "Clean area and handover at the end"
+      ],
+      "checks": [
+        "Condition of the surfaces and need for preparation",
+        "Materials suited to the type of surface",
+        "Protection of floors, furniture and circulation areas"
+      ],
+      "limits": "The type of paint, the number of coats and the timescale depend on the assessment on site and are defined in the quote."
+    }
+  },
+  "categories": {
+    "hidraulica": "Hydraulics",
+    "eletrica": "Electrical",
+    "acabamentos": "Finishing"
+  },
+  "page": {
+    "meta": {
+      "title": "Plumbing and Electric Pump Services in Luanda",
+      "description": "Plumbing, electric pumps, swimming pools, leak detection, electrical work, tiling, false ceilings and painting in Luanda. Request your quote."
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Integrated technical solutions.",
+      "description": "From installation to maintenance, every service follows the same method: assessment, a clear quote, organised execution and a final check.",
+      "imageAlt": "PPR water network installed by VART Soluções"
+    },
+    "navLabel": "Service areas",
+    "checksTitle": "What we check",
+    "limitsLabel": "Scope limits:",
+    "galleryLabel": "Photographs of {title}",
+    "galleryAlt": "{title}: photograph {n} of work carried out by VART Soluções"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ui": {
+    "view": "Ver proyecto"
+  },
+  "items": {
+    "obra-onga-eletrobomba": {
+      "title": "Montaje de electrobomba",
+      "category": "Sistemas de bombeo",
+      "location": "Obra Onga · Luanda",
+      "description": "Montaje y puesta en marcha de una electrobomba para el abastecimiento de agua de la obra, con protección del equipo y comprobación de la presión en toda la red.",
+      "alt": "Montaje de electrobomba en la obra Onga, en Luanda"
+    },
+    "rede-ppr-residencial": {
+      "title": "Red hidráulica en PPR",
+      "category": "Fontanería",
+      "location": "Luanda",
+      "description": "Ejecución de red de agua fría y caliente en PPR, con fusión controlada, fijación correcta y prueba de estanqueidad antes de cerrar las paredes.",
+      "alt": "Tubería PPR instalada por VART Soluções"
+    },
+    "teste-estanqueidade": {
+      "title": "Prueba de estanqueidad",
+      "category": "Diagnóstico técnico",
+      "location": "Luanda",
+      "description": "Prueba de presión en una red nueva para comprobar la estanqueidad de todas las conexiones antes de entregar la instalación al cliente.",
+      "alt": "Prueba de estanqueidad en una instalación hidráulica"
+    },
+    "obra-golfo": {
+      "title": "Red de agua en PPR (exterior)",
+      "category": "Fontanería",
+      "location": "Obra Golfo · Luanda",
+      "description": "Instalación de redes de agua en PPR en el exterior.",
+      "alt": "Instalación de red de agua en PPR en el exterior, en la obra Golfo"
+    },
+    "patriota-vias-express": {
+      "title": "Red de agua con depósito elevado",
+      "category": "Fontanería",
+      "location": "Patriota Vias Express · Luanda",
+      "description": "Instalación de redes de agua con depósito elevado.",
+      "alt": "Instalación de red de agua con depósito elevado, en Patriota Vias Express"
+    }
+  },
+  "page": {
+    "galleryTitle": "Fotografías",
+    "galleryAlt": "{title}: fotografía {n} de un trabajo realizado por VART Soluções"
+  }
+}

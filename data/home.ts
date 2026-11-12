@@ -31,21 +31,21 @@ export const differentials: Differential[] = [
     id: 'profissionalismo',
     title: 'Profissionalismo',
     description:
-      'Equipa técnica experiente, pontual e comunicativa — do primeiro contacto à entrega.',
+      'Comunicação clara e trabalho organizado — do primeiro contacto à entrega.',
     icon: 'hardhat',
   },
   {
     id: 'solucoes-integradas',
     title: 'Soluções integradas',
     description:
-      'Canalização, bombeamento, piscinas e manutenção: um único parceiro para a sua infraestrutura.',
+      'Canalização, bombeamento, piscinas, eletricidade e acabamentos: um único parceiro para a sua obra.',
     icon: 'layers',
   },
   {
     id: 'compromisso',
     title: 'Compromisso',
     description:
-      'Prazos respeitados e acompanhamento após o serviço. O nome da VART está em cada obra.',
+      'Prazos e valores combinados no orçamento. O nome da VART está em cada obra.',
     icon: 'handshake',
   },
 ];
@@ -80,6 +80,6 @@ export const processSteps: ProcessStep[] = [
   {
     id: 'entrega',
     title: 'Entrega',
-    description: 'Testamos tudo, entregamos limpo e acompanhamos o resultado pós-serviço.',
+    description: 'Testamos tudo e entregamos a área limpa.',
   },
 ];

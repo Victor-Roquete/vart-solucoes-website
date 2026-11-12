@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
 import { VartSymbol } from '@/components/brand/VartSymbol';
 
@@ -22,6 +23,7 @@ export function Logo({
   href = '/',
   compact = false,
 }: LogoProps) {
+  const t = useTranslations('common');
   const content = (
     <span className='flex items-center gap-3'>
       <VartSymbol
@@ -62,7 +64,7 @@ export function Logo({
   return (
     <Link
       href={href}
-      aria-label='VART Soluções — página inicial'
+      aria-label={t('aria.homeLink')}
       className='group inline-flex'
     >
       {content}

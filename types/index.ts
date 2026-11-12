@@ -21,6 +21,14 @@ export interface Service {
   imageAlt: string;
   href: string;
   featured?: boolean;
+  /** Área que agrupa o serviço em /servicos (ex.: Hidráulica). */
+  category: string;
+  /** Fotografias reais adicionais do serviço. */
+  gallery?: string[];
+  /** Pontos que verificamos neste serviço (lista «O que verificamos»). */
+  checks?: string[];
+  /** Limites de atuação do serviço, em linguagem simples. */
+  limits?: string;
 }
 
 export interface Project {
@@ -34,6 +42,8 @@ export interface Project {
   image: string;
   imageAlt: string;
   featured?: boolean;
+  /** Fotografias reais da obra (página /projetos/<slug>). */
+  gallery?: string[];
 }
 
 export interface ShowcaseSlide {
@@ -77,12 +87,7 @@ export interface CompanyInfo {
 
 export interface HeroSlide {
   id: string;
-  /** Linha curta acima do título do slide (área de serviço). */
-  eyebrow: string;
-  title: string;
-  description: string;
   image: string;
-  imageAlt: string;
   href: string;
   /** Onde aparece: fotos verticais de baixa resolução ficam só em 'mobile'. */
   show: 'all' | 'mobile' | 'desktop';

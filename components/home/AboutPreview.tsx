@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-import { company } from '@/data/company';
+import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
@@ -11,6 +11,8 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
  * deslocada e entrada escalonada do texto.
  */
 export function AboutPreview() {
+  const t = useTranslations('home.about');
+  const tc = useTranslations('company');
   return (
     <section className='py-20 md:py-28'>
       <Container>
@@ -24,27 +26,27 @@ export function AboutPreview() {
             <div className='relative aspect-[4/3] overflow-hidden rounded-xl shadow-card'>
               <Image
                 src='/assets/services/canalizacao/manutencao-eletrobomba.webp'
-                alt='Técnico da VART Soluções a realizar manutenção de eletrobomba'
+                alt={t('alt')}
                 fill
                 sizes='(min-width: 1024px) 46vw, 92vw'
                 className='object-cover'
               />
             </div>
             <p className='mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted'>
-              Manutenção técnica · Equipa VART
+              {t('caption')}
             </p>
           </Reveal>
 
           {/* Texto */}
           <div>
             <SectionHeading
-              eyebrow='Sobre a VART'
-              title='Critério técnico em cada instalação.'
-              description={company.longDescription[0]}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={tc('long1')}
             />
             <Reveal delay={0.15}>
               <p className='mt-5 leading-relaxed text-muted'>
-                {company.longDescription[1]}
+                {tc('long2')}
               </p>
             </Reveal>
             <Reveal delay={0.25}>
@@ -54,7 +56,7 @@ export function AboutPreview() {
                   icon={<ArrowRight className='h-4 w-4' aria-hidden='true' />}
                   className='min-w-[200px]'
                 >
-                  Conheça a empresa
+                  {t('cta')}
                 </Button>
               </div>
             </Reveal>

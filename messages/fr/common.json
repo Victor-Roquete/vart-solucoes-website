@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "quote": "Demander un devis",
+    "quoteShort": "Devis"
+  },
+  "aria": {
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu de navigation",
+    "menu": "Menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "menuNav": "Navigation du menu",
+    "whatsapp": "Écrire à VART Soluções sur WhatsApp",
+    "homeLink": "VART Soluções — page d'accueil"
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "footer": {
+    "tagline": "Plomberie, électropompes, piscines, électricité et finitions — carrelage, faux plafonds et peinture — réalisés avec précision, rigueur et engagement envers le résultat.",
+    "social": "Réseaux sociaux",
+    "servicesAria": "Services dans le pied de page",
+    "companyAria": "Entreprise dans le pied de page",
+    "company": "Entreprise",
+    "rights": "Tous droits réservés.",
+    "owner": "VART Soluções"
+  },
+  "hours": {
+    "value": "Lun–Ven · 8 h à 18 h"
+  },
+  "whatsapp": {
+    "defaultMessage": "Bonjour VART Soluções ! Je souhaiterais demander un devis.",
+    "tooltip": "Parlez-nous"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  },
+  "seo": {
+    "titleSuffix": "Plomberie, Électropompes et Piscines à Luanda",
+    "description": "Plomberie, électropompes, piscines, détection de fuites, électricité et finitions à Luanda. Évaluation sur place et devis sans engagement.",
+    "keywords": [
+      "VART Soluções",
+      "plomberie Luanda",
+      "électropompes Luanda",
+      "installation d'électropompe",
+      "maintenance d'électropompes",
+      "piscines Luanda",
+      "détection de fuites Luanda",
+      "électricité Luanda",
+      "carrelage Luanda",
+      "faux plafonds Luanda",
+      "peinture Luanda",
+      "services techniques Luanda"
+    ]
+  }
+}

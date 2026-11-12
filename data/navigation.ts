@@ -1,21 +1,28 @@
-import type { NavItem } from '@/types';
+/** Chaves de navegação; os textos vêm de messages/<idioma>/common.json (nav.*). */
+export type NavKey =
+  | 'home'
+  | 'services'
+  | 'projects'
+  | 'about'
+  | 'contact'
+  | 'quote';
 
-export const mainNav: NavItem[] = [
-  { label: 'Início', href: '/' },
-  { label: 'Serviços', href: '/servicos' },
-  { label: 'Projetos', href: '/projetos' },
-  { label: 'Sobre nós', href: '/sobre' },
-  { label: 'Contacto', href: '/contato' },
+export interface NavLink {
+  key: NavKey;
+  href: string;
+}
+
+export const mainNav: NavLink[] = [
+  { key: 'home', href: '/' },
+  { key: 'services', href: '/servicos' },
+  { key: 'projects', href: '/projetos' },
+  { key: 'about', href: '/sobre' },
+  { key: 'contact', href: '/contato' },
 ];
 
-export const footerNav: { title: string; items: NavItem[] }[] = [
-  {
-    title: 'Empresa',
-    items: [
-      { label: 'Sobre nós', href: '/sobre' },
-      { label: 'Projetos', href: '/projetos' },
-      { label: 'Contacto', href: '/contato' },
-      { label: 'Solicitar orçamento', href: '/contato#orcamento' },
-    ],
-  },
+export const footerNav: NavLink[] = [
+  { key: 'about', href: '/sobre' },
+  { key: 'projects', href: '/projetos' },
+  { key: 'contact', href: '/contato' },
+  { key: 'quote', href: '/contato#orcamento' },
 ];

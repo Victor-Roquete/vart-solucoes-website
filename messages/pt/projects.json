@@ -1,0 +1,46 @@
+{
+  "ui": {
+    "view": "Ver projeto"
+  },
+  "items": {
+    "obra-onga-eletrobomba": {
+      "title": "Montagem de Eletrobomba",
+      "category": "Sistemas de Bombeamento",
+      "location": "Obra Onga · Luanda",
+      "description": "Montagem e arranque de eletrobomba para abastecimento de água da obra, com proteção do equipamento e verificação de pressão em toda a rede.",
+      "alt": "Montagem de eletrobomba na obra Onga, em Luanda"
+    },
+    "rede-ppr-residencial": {
+      "title": "Rede Hidráulica em PPR",
+      "category": "Canalização",
+      "location": "Luanda",
+      "description": "Execução de rede de água fria e quente em PPR, com fusão controlada, fixação correta e teste de estanqueidade antes do fecho de paredes.",
+      "alt": "Rede de tubagem PPR instalada pela VART Soluções"
+    },
+    "teste-estanqueidade": {
+      "title": "Teste de Estanqueidade",
+      "category": "Diagnóstico Técnico",
+      "location": "Luanda",
+      "description": "Teste de pressão em rede nova para comprovar a estanqueidade de todas as ligações antes da entrega da instalação ao cliente.",
+      "alt": "Teste de estanqueidade em instalação hidráulica"
+    },
+    "obra-golfo": {
+      "title": "Rede de Água em PPR (Exterior)",
+      "category": "Canalização",
+      "location": "Obra Golfo · Luanda",
+      "description": "Instalação de redes de água em PPR no exterior.",
+      "alt": "Instalação de rede de água em PPR no exterior, na obra Golfo"
+    },
+    "patriota-vias-express": {
+      "title": "Rede de Água com Reservatório Elevado",
+      "category": "Canalização",
+      "location": "Patriota Vias Express · Luanda",
+      "description": "Instalação de redes de água com reservatório elevado.",
+      "alt": "Instalação de rede de água com reservatório elevado, em Patriota Vias Express"
+    }
+  },
+  "page": {
+    "galleryTitle": "Fotografias",
+    "galleryAlt": "{title}: fotografia {n} de trabalho executado pela VART Soluções"
+  }
+}

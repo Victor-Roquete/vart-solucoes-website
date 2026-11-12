@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "about": "Sobre nós",
+    "contact": "Contacto",
+    "quote": "Solicitar orçamento",
+    "quoteShort": "Orçamento"
+  },
+  "aria": {
+    "skipToContent": "Saltar para o conteúdo",
+    "mainNav": "Navegação principal",
+    "openMenu": "Abrir menu de navegação",
+    "menu": "Menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "menuNav": "Navegação do menu",
+    "whatsapp": "Falar com a VART Soluções no WhatsApp",
+    "homeLink": "VART Soluções — página inicial"
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "footer": {
+    "tagline": "Canalização, eletrobombas, piscinas, eletricidade e acabamentos — ladrilho, tetos falsos e pintura — executados com precisão, rigor e compromisso com o resultado.",
+    "social": "Redes sociais",
+    "servicesAria": "Serviços no rodapé",
+    "companyAria": "Empresa no rodapé",
+    "company": "Empresa",
+    "rights": "Todos os direitos reservados.",
+    "owner": "VART Soluções — Prestação de Serviços"
+  },
+  "hours": {
+    "value": "Seg–Sex · 08h00 às 18h00"
+  },
+  "whatsapp": {
+    "defaultMessage": "Olá VART Soluções! Gostaria de solicitar um orçamento.",
+    "tooltip": "Fale connosco"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "text": "A página que procura não existe ou foi movida.",
+    "back": "Voltar ao início"
+  },
+  "seo": {
+    "titleSuffix": "Canalização, Eletrobombas e Piscinas em Luanda",
+    "description": "Canalização, eletrobombas, piscinas, deteção de fugas, eletricidade e acabamentos em Luanda. Avaliação no local e orçamento sem compromisso.",
+    "keywords": [
+      "VART Soluções",
+      "canalização Luanda",
+      "eletrobombas Luanda",
+      "instalação de eletrobomba",
+      "manutenção de eletrobombas",
+      "piscinas Luanda",
+      "deteção de fugas Luanda",
+      "eletricidade Luanda",
+      "ladrilho Luanda",
+      "tetos falsos Luanda",
+      "pintura Luanda",
+      "serviços técnicos Luanda"
+    ]
+  }
+}

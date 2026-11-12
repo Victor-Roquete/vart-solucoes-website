@@ -1,10 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { company } from '@/data/company';
+import { useTranslations } from 'next-intl';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
-import { WHATSAPP_DEFAULT_MESSAGE } from '@/lib/constants';
-import { whatsappMessage } from '@/lib/utils';
+import { whatsappLink } from '@/lib/whatsapp';
 
 /**
  * Botão WhatsApp flutuante.
@@ -12,12 +11,14 @@ import { whatsappMessage } from '@/lib/utils';
  * Comporta tooltip no hover, anel de atenção discreto e aria-label.
  */
 export function WhatsAppFloat() {
+  const t = useTranslations('common');
+
   return (
     <motion.a
-      href={`${company.whatsapp.waUrl}?text=${whatsappMessage(WHATSAPP_DEFAULT_MESSAGE)}`}
+      href={whatsappLink(t('whatsapp.defaultMessage'))}
       target='_blank'
       rel='noopener noreferrer'
-      aria-label='Falar com a VART Soluções no WhatsApp'
+      aria-label={t('aria.whatsapp')}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.4, type: 'spring', stiffness: 260, damping: 20 }}
@@ -35,7 +36,7 @@ export function WhatsAppFloat() {
         aria-hidden='true'
         className='pointer-events-none absolute right-full top-1/2 mr-3 hidden -translate-y-1/2 translate-x-2 whitespace-nowrap rounded-md border border-line bg-white px-3.5 py-2 text-xs font-bold text-brand-900 opacity-0 shadow-card transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:block'
       >
-        Fale connosco
+        {t('whatsapp.tooltip')}
       </span>
     </motion.a>
   );

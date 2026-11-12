@@ -1,0 +1,159 @@
+{
+  "hero": {
+    "carouselLabel": "Destaques da VART Soluções",
+    "tagline": "Prestação de serviços técnicos",
+    "headline": "Soluções técnicas para a sua obra.",
+    "viewService": "Ver serviço",
+    "goToSlide": "Ir para o slide {n}: {title}",
+    "slides": {
+      "ppr-exterior": {
+        "eyebrow": "Canalização",
+        "title": "Redes de água em PPR",
+        "description": "Instalação e renovação de redes hidráulicas, com ligações verificadas e teste antes da entrega.",
+        "alt": "Rede de tubagem em PPR instalada pela VART Soluções"
+      },
+      "termofusao": {
+        "eyebrow": "Canalização",
+        "title": "Ligações em PPR por termofusão",
+        "description": "Soldadura das tubagens em obra, com ligações executadas e verificadas antes da entrega.",
+        "alt": "Técnico a soldar tubagem em PPR numa obra da VART Soluções"
+      },
+      "eletricidade": {
+        "eyebrow": "Eletricidade",
+        "title": "Fiação e condutores",
+        "description": "Passagem e ligação de condutores com organização e verificação final.",
+        "alt": "Passagem de condutores elétricos numa obra da VART Soluções"
+      },
+      "ladrilho": {
+        "eyebrow": "Revestimentos",
+        "title": "Assentamento de ladrilho",
+        "description": "Pavimentos e paredes revestidos com acabamento cuidado.",
+        "alt": "Assentamento de ladrilho executado pela VART Soluções"
+      },
+      "montagem-rede": {
+        "eyebrow": "Canalização",
+        "title": "Montagem da rede de água",
+        "description": "Traçado e montagem de tubagem em PPR, com ligações organizadas e testadas.",
+        "alt": "Montagem de tubagem em PPR numa obra da VART Soluções"
+      },
+      "esgoto-pvc": {
+        "eyebrow": "Canalização",
+        "title": "Redes de esgoto em PVC",
+        "description": "Execução de ramais e ligações de drenagem em PVC.",
+        "alt": "Rede de esgoto em PVC instalada pela VART Soluções"
+      },
+      "teto-falso": {
+        "eyebrow": "Acabamentos",
+        "title": "Tetos falsos",
+        "description": "Execução de tetos falsos com acabamento limpo.",
+        "alt": "Teto falso executado pela VART Soluções"
+      },
+      "ppr-distribuicao": {
+        "eyebrow": "Canalização",
+        "title": "Distribuição de água",
+        "description": "Ligações e distribuição executadas com organização e verificação final.",
+        "alt": "Distribuição de água em PPR instalada pela VART Soluções"
+      }
+    }
+  },
+  "trust": {
+    "label": "Compromissos de serviço da VART Soluções",
+    "items": {
+      "quality": "Qualidade",
+      "professionalism": "Profissionalismo",
+      "commitment": "Compromisso",
+      "integrated": "Soluções integradas",
+      "clean": "Execução limpa",
+      "fast": "Resposta rápida"
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre a VART",
+    "title": "Critério técnico em cada instalação.",
+    "caption": "Manutenção técnica · VART Soluções",
+    "alt": "Manutenção de eletrobomba realizada pela VART Soluções",
+    "cta": "Conheça a empresa"
+  },
+  "services": {
+    "eyebrow": "Serviços",
+    "title": "Soluções técnicas para cada necessidade da sua infraestrutura.",
+    "description": "Passe o cursor sobre cada área para ver um trabalho real executado pela VART.",
+    "view": "Ver serviço"
+  },
+  "differentials": {
+    "eyebrow": "Por que a VART",
+    "title": "Um parceiro técnico em quem pode confiar.",
+    "description": "Cada serviço é conduzido com a mesma disciplina, independentemente da dimensão da obra.",
+    "items": {
+      "qualidade": {
+        "title": "Qualidade",
+        "description": "Materiais adequados, execução criteriosa e verificação final em cada serviço entregue."
+      },
+      "profissionalismo": {
+        "title": "Profissionalismo",
+        "description": "Comunicação clara e trabalho organizado — do primeiro contacto à entrega."
+      },
+      "solucoes-integradas": {
+        "title": "Soluções integradas",
+        "description": "Canalização, bombeamento, piscinas, eletricidade e acabamentos: um único parceiro para a sua obra."
+      },
+      "compromisso": {
+        "title": "Compromisso",
+        "description": "Prazos e valores combinados no orçamento. O nome da VART está em cada obra."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projetos",
+    "title": "Trabalhos que provam o nosso padrão.",
+    "description": "Obras e instalações reais — a melhor forma de avaliar uma empresa técnica.",
+    "all": "Todos os projetos",
+    "nextEyebrow": "Próximo projeto",
+    "nextTitle": "O seu pode ser o próximo trabalho apresentado aqui."
+  },
+  "impact": {
+    "eyebrow": "Da avaliação à entrega",
+    "title": "Execução com critério, do primeiro metro ao último teste.",
+    "cta": "Ver projetos",
+    "alt": "Detalhe de rede hidráulica em PPR executada pela VART Soluções"
+  },
+  "process": {
+    "eyebrow": "Como trabalhamos",
+    "title": "Um processo claro, do contacto à entrega.",
+    "description": "Nenhuma etapa improvisada: sabe sempre em que ponto do trabalho estamos.",
+    "steps": {
+      "entendimento": {
+        "title": "Entendimento",
+        "description": "Ouvimos a sua necessidade e recolhemos os detalhes do espaço e do problema."
+      },
+      "avaliacao": {
+        "title": "Avaliação",
+        "description": "Avaliamos a instalação no local e identificamos a solução técnica adequada."
+      },
+      "orcamento": {
+        "title": "Orçamento",
+        "description": "Apresentamos uma proposta clara, com materiais, prazos e valores definidos."
+      },
+      "execucao": {
+        "title": "Execução",
+        "description": "Executamos com rigor, limpeza e comunicação constante durante o trabalho."
+      },
+      "entrega": {
+        "title": "Entrega",
+        "description": "Testamos tudo e entregamos a área limpa."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Vamos conversar",
+    "title": "Precisa de uma solução para a sua obra ou instalação?",
+    "text": "Fale com a VART Soluções. Respondemos com um diagnóstico claro e um orçamento sem compromisso.",
+    "whatsapp": "WhatsApp"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Fale com a VART Soluções.",
+    "description": "Estamos prontos para avaliar o seu projeto e responder com rapidez.",
+    "mapTitle": "Mapa — VART Soluções, Luanda, Angola"
+  }
+}

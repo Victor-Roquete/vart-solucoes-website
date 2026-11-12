@@ -1,0 +1,54 @@
+{
+  "sobre": {
+    "meta": {
+      "title": "À propos — Services Techniques à Luanda",
+      "description": "Entreprise angolaise de services techniques à Luanda : plomberie, électropompes, piscines, électricité et finitions, exécution rigoureuse."
+    },
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "Savoir-faire technique, engagement et travail documenté.",
+      "description": "Plomberie, électropompes, piscines, électricité et finitions — carrelage, faux plafonds et peinture — réalisés avec précision, rigueur et engagement envers le résultat.",
+      "imageAlt": "Installation d'un réseau d'eau réalisée par VART Soluções"
+    },
+    "imageAlt": "Installation d'un réseau d'eau réalisée par VART Soluções",
+    "company": {
+      "eyebrow": "L'entreprise",
+      "title": "Des installations bien faites, du premier au dernier essai."
+    },
+    "commitments": {
+      "eyebrow": "Engagements",
+      "title": "Ce qui ne manque jamais dans un service VART."
+    },
+    "process": {
+      "eyebrow": "Notre méthode",
+      "title": "Un processus défini, un résultat prévisible."
+    }
+  },
+  "projetos": {
+    "meta": {
+      "title": "Projets de Plomberie et Électropompes à Luanda",
+      "description": "Chantiers et installations réalisés par VART Soluções à Luanda : plomberie, électropompes, piscines et maintenance technique."
+    },
+    "hero": {
+      "eyebrow": "Projets",
+      "title": "Des chantiers réels, documentés en photos.",
+      "description": "Une sélection de chantiers et d'installations de VART Soluções. La qualité avant la quantité.",
+      "imageAlt": "Réseau d'eau en PPR sur un chantier de VART Soluções"
+    }
+  },
+  "contato": {
+    "meta": {
+      "title": "Contact et Demande de Devis à Luanda",
+      "description": "Parlez à VART Soluções : téléphone, WhatsApp, e-mail et demande de devis pour chantiers et installations à Luanda."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Parlons de votre projet.",
+      "description": "Réponse rapide par téléphone ou WhatsApp, et devis sans engagement.",
+      "imageAlt": "Chantier réalisé par VART Soluções"
+    },
+    "channelsTitle": "Contact direct",
+    "formTitle": "Demandez votre devis",
+    "formText": "Remplissez les informations et envoyez : le message arrive directement sur notre WhatsApp, bien organisé."
+  }
+}

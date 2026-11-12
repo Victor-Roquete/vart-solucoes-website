@@ -1,0 +1,54 @@
+{
+  "sobre": {
+    "meta": {
+      "title": "Sobre nosotros — Servicios Técnicos en Luanda",
+      "description": "Empresa angoleña de servicios técnicos en Luanda: fontanería, electrobombas, piscinas, electricidad y acabados, con ejecución rigurosa."
+    },
+    "hero": {
+      "eyebrow": "Sobre nosotros",
+      "title": "Técnica, compromiso y trabajo documentado.",
+      "description": "Fontanería, electrobombas, piscinas, electricidad y acabados —colocación de baldosas, falsos techos y pintura— ejecutados con precisión, rigor y compromiso con el resultado.",
+      "imageAlt": "Instalación de red de agua ejecutada por VART Soluções"
+    },
+    "imageAlt": "Instalación de red de agua ejecutada por VART Soluções",
+    "company": {
+      "eyebrow": "La empresa",
+      "title": "Instalaciones bien hechas, de la primera a la última prueba."
+    },
+    "commitments": {
+      "eyebrow": "Compromisos",
+      "title": "Lo que nunca falta en un servicio de VART."
+    },
+    "process": {
+      "eyebrow": "Cómo trabajamos",
+      "title": "Proceso definido, resultado previsible."
+    }
+  },
+  "projetos": {
+    "meta": {
+      "title": "Proyectos de Fontanería y Electrobombas en Luanda",
+      "description": "Obras e instalaciones ejecutadas por VART Soluções en Luanda: fontanería, electrobombas, piscinas y mantenimiento técnico."
+    },
+    "hero": {
+      "eyebrow": "Proyectos",
+      "title": "Obras reales, documentadas en fotografía.",
+      "description": "Una selección de obras e instalaciones de VART Soluções. Calidad por encima de cantidad.",
+      "imageAlt": "Red de agua en PPR en una obra de VART Soluções"
+    }
+  },
+  "contato": {
+    "meta": {
+      "title": "Contacto y Solicitud de Presupuesto en Luanda",
+      "description": "Hable con VART Soluções: teléfono, WhatsApp, correo electrónico y solicitud de presupuesto para obras e instalaciones en Luanda."
+    },
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos de su proyecto.",
+      "description": "Respuesta rápida por teléfono o WhatsApp, y presupuesto sin compromiso.",
+      "imageAlt": "Obra ejecutada por VART Soluções"
+    },
+    "channelsTitle": "Canales directos",
+    "formTitle": "Pida su presupuesto",
+    "formText": "Rellene los datos y envíe: el mensaje llega directamente a nuestro WhatsApp, todo organizado."
+  }
+}

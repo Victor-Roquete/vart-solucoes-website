@@ -2,7 +2,7 @@
  * Constantes globais do website.
  * ⚠️ SITE_URL: substituir pelo domínio final em produção (afeta SEO/canonical).
  */
-export const SITE_URL = 'https://vartsolucoes.co.ao';
+export const SITE_URL = 'https://vart-solucoes.vercel.app';
 
 export const SITE_NAME = 'VART Soluções';
 
