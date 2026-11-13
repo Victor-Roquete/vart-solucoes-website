@@ -50,6 +50,7 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(SITE_URL),
+    verification: { google: 'IVLcIQHs_B5VWGJFyaBOZfdGPPLWH3mANpsODvvJj7E' },
     title: { default: title, template: `%s | ${SITE_NAME}` },
     description,
     keywords: t.raw('keywords') as string[],
